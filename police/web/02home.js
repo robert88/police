@@ -1,14 +1,19 @@
+var resizeMap=[];
 layui.use('element', function(){
 
 	var element = layui.element();
 
 	/*tab控件，需要设置lay-filter=test*/
 	element.on('tab(test)', function(data){
-		var $li = $(this).parents(".layui-tab").find(".layui-tab-content").find(".layui-tab-item");
+		var $lis = $(this).parents(".layui-tab").find(".layui-tab-content").find(".layui-tab-item");
 		var index = $(this).index();
-		if(!$(this).data("initChat")&&$li.length>index){
-            initChart($li.get(index))
-            $(this).data("initChat",true);
+		var $curLi = $lis.eq(index);
+		if(!$curLi.data("initChat")&&$lis.length>index){
+			resizeMap.push({chart:initChart($curLi.get(0)),target:$curLi});
+            
+            $curLi.data("initChat",resizeMap[resizeMap.length-1].chart);
+		}else{
+		$curLi.data("initChat").resize();
 		}
 	});
 
@@ -22,8 +27,20 @@ layui.use('element', function(){
 /*初始化echart控件*/
 layui.use('echart', function(){
     // debugger
-    var dom1 = $(".policeCaseHandler").data("initChat",true)[0]
-    initChart(dom1)
+    var $first = $(".policeCaseHandler.layui-tab-item");
+	resizeMap.push({chart:initChart($first.get(0)),target:$first})
+    $first.data("initChat",resizeMap[resizeMap.length-1].chart);
+	/*自适应*/
+	var timer
+    $(window).on("resize",function () {
+	    clearTimeout(timer)
+      timer=setTimeout(function(){
+      for(var i=0;i<resizeMap.length;i++){
+      if(resizeMap[i].target.is(":visible") && resizeMap[i].chart)}{
+      resizeMap[i].chart.resize();
+      }
+      },100)
+    })
 });
 
 function initChart(dom){
@@ -86,11 +103,7 @@ function initChart(dom){
         ]
     };
     ;
-    if (option && typeof option === "object") {
-        myChart.setOption(option, true);
-    }
-    /*自适应*/
-    $(window).on("resize",function () {
-       myChart.resize();
-    })
+   myChart.setOption(option, true);
+	return  myChart;
+    
 }
