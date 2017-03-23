@@ -313,5 +313,7 @@ border-radius:50%;
 .btn-group-tab .layui-tab-title,.btn-group-tab .layui-tab-title .layui-this:after{
 	border:none;
 }
+.layui-btn-normal{border:1px solid #1e9fff;color:#1e9fff;background:#fff}
+.layui-btn-normal:hover{color:#2ca5ff}
 
 
