@@ -1,5 +1,5 @@
 .ls-container .layui-form{
-    border:1px solid #c1c1c1;
+    border:1px solid #e2e2e2;
     padding:   0 ;
     margin-top: 1rem;
 }
@@ -49,9 +49,7 @@
 .ls-container .layui-form-checked:hover i {
     color: #0a3174;
 }
-.layui-form .searchList .layui-form-label{
-    color:#0aa5ff
-}
+
 .layui-form-title {
     position: relative;
     background: #0aa5ff;
@@ -63,7 +61,10 @@
     font-sie: 1.25rem;
     font-weight: 700;
     margin: 0.5rem 0;
-
+}
+.layui-form-search-center{
+    width:1100px;
+    margin:0 auto;
 }
 .layui-form .searchList .layui-input-inline,
 .layui-form .searchList .layui-inline{

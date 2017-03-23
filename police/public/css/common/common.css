@@ -156,8 +156,21 @@ header .login{
 .mr30{
 	margin-right:30px ;
 }
+.mt10{
+	margin-top:10px ;
+}
 .mt20{
 	margin-top:1.25rem;
+}
+.mb30{
+	margin-bottom: 30px;
+}
+.fr{
+	float:right;
+}
+.ptb20{
+	padding-top:20px;
+	padding-bottom: 20px;
 }
 .t-green{
 	color:#009688;
@@ -313,6 +326,14 @@ border-radius:50%;
 .btn-group-tab .layui-tab-title,.btn-group-tab .layui-tab-title .layui-this:after{
 	border:none;
 }
-
+.tc{
+	text-align: center;
+}
+.search-midde-gray{
+	background: #fafafa;
+}
+.btn-group-tab .layui-tab-title .layui-this .layui-btn{
+	background: #4085c8;color:#fff;
+}
 
 

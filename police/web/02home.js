@@ -31,16 +31,17 @@ layui.use('echart', function(){
 	resizeMap.push({chart:initChart($first.get(0)),target:$first})
     $first.data("initChat",resizeMap[resizeMap.length-1].chart);
 	/*自适应*/
-	var timer
-    $(window).on("resize",function () {
-	    clearTimeout(timer)
-      timer=setTimeout(function(){
-      for(var i=0;i<resizeMap.length;i++){
-      if(resizeMap[i].target.is(":visible") && resizeMap[i].chart)}{
-      resizeMap[i].chart.resize();
-      }
-      },100)
-    })
+	var timer;
+	$(window).on("resize", function () {
+		clearTimeout(timer);
+		timer = setTimeout(function () {
+			for (var i = 0; i < resizeMap.length; i++) {
+				if (resizeMap[i].target.is(":visible") && resizeMap[i].chart){
+					resizeMap[i].chart.resize();
+				}
+			}
+		}, 100)
+	})
 });
 
 function initChart(dom){
@@ -102,7 +103,7 @@ function initChart(dom){
             }
         ]
     };
-    ;
+
    myChart.setOption(option, true);
 	return  myChart;
     
