@@ -304,3 +304,14 @@ nav .bottom{
 	bottom: 0;
 	height:5.3125rem;
 }
+nav .layui-nav-item .tips{
+position:absolute;
+width:8px;
+height:8px;
+border-radius:50%;
+}
+.btn-group-tab .layui-tab-title,.btn-group-tab .layui-tab-title .layui-this:after{
+	border:none;
+}
+
+
