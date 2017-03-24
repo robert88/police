@@ -74,23 +74,23 @@
     margin:0 auto;
 }
 }
-@media screen and (max-width:1324px){
+@media screen and (max-width:1387px){
 .layui-form-search-center-comb{
-    width:640px;
+    width:660px;
     margin:0 auto;
 }
 }
-@media screen and (min-width:1324px){
+@media screen and (min-width:1387px){
 .layui-form-search-center-comb{
-    width:1100px;
+    width:1160px;
     margin:0 auto;
 }
 }
 .layui-form-search-center-comb div.layui-input-inline{
     width:160px;
 }
-.layui-form-search-center-comb .layui-input-label{
-    width:100px;
+.layui-form-search-center-comb .layui-form-label{
+    width:115px;
 }
 .layui-form .searchList .layui-input-inline,
 .layui-form .searchList .layui-inline{

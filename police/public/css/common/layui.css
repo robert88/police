@@ -122,11 +122,11 @@ a cite{font-style: normal; *cursor:pointer;}
 .layui-btn-primary:hover{border-color: #009688; color: #333}
 /* 百搭 */.layui-btn-normal{border:1px solid #1e9fff;color:#1e9fff;background:#fff}
 .layui-btn-normal:hover{color:#2ca5ff}
-/* 暖色 */.layui-btn-warm{background-color: #fe9900;}
+/* 暖色 */.layui-btn-warn{background-color: #fe9900;}
 /* 警告 */.layui-btn-danger{background-color: #db512c;}
 /* 禁用 */.layui-btn-disabled,.layui-btn-disabled:hover,.layui-btn-disabled:active{border: 1px solid #e6e6e6; background-color: #FBFBFB; color: #C9C9C9; cursor: not-allowed; opacity: 1;}
 /* 百搭 */.layui-text-normal{color:#2ca5ff}
-/* 暖色 */.layui-text-warm{color: #fe9900;}
+/* 暖色 */.layui-text-warn{color: #fe9900;}
 /* 警告 */.layui-text-danger{color: #db512c;}
 .layui-link{
   margin-right:10px ;
@@ -151,10 +151,10 @@ a cite{font-style: normal; *cursor:pointer;}
 
 .layui-form-item{margin-bottom: 15px; clear: both; *zoom: 1;}
 .layui-form-item:after{content:'\20'; clear: both; *zoom: 1; display: block; height:0;}
-.layui-form-label{position: relative; float: left; display: block; padding: 9px 15px;  width: 80px; font-weight:normal;line-height: 20px; text-align: right;}
+.layui-form-label{position: relative; float: left; display: block; padding: 9px 5px;  width: 80px; font-weight:normal;line-height: 20px; text-align: right;}
 .layui-form-item .layui-inline{margin-bottom: 5px; margin-right: 10px;}
 .layui-input-block, .layui-input-inline{position: relative;}
-.layui-input-block{margin-left: 110px; min-height: 36px;}
+.layui-input-block{    margin-left: 90px;min-height: 36px;}
 .layui-input-inline{display: inline-block; vertical-align: middle;}
 .layui-form-item .layui-input-inline{float: left;    width: 217px; margin-right: 10px;}
 .layui-form-text .layui-input-inline{width: auto;}
@@ -255,7 +255,7 @@ a cite{font-style: normal; *cursor:pointer;}
 #LAY_layedit_code{overflow: hidden;}
 
 /** 表格修饰 **/
-.layui-table,.layui-table table{width: 100%; margin: 10px 0; background-color: #fff;}
+.layui-table,.layui-table table{width: 100%; margin: 10px 0 10px -1px; background-color: #fff;}
 .layui-table tr{transition: all .3s; -webkit-transition: all .3s;}
 .layui-table thead tr{background-color: #f2f2f2;}
 .layui-table th{text-align: left;}

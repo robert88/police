@@ -40,6 +40,14 @@ header{
 	top:50%;
 
 }
+.color-icon-print{
+	background: url(/public/images/print.png) no-repeat;
+	width: 28px;
+	height: 21px;
+	margin-right: 4px;
+	vertical-align: sub;
+	display: inline-block;
+}
 .color-icon-jpgicon{
 	background: url(/public/images/jpgIcon.png) no-repeat center center;
 }
@@ -329,11 +337,14 @@ border-radius:50%;
 .tc{
 	text-align: center;
 }
-.search-midde-gray{
+.search-middle-gray{
 	background: #fafafa;
 }
 .btn-group-tab .layui-tab-title .layui-this .layui-btn{
 	background: #4085c8;color:#fff;
+}
+.tab-item-min-height{
+	min-height: 700px;
 }
 
 

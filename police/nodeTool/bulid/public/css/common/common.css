@@ -30,6 +30,14 @@ header{
 	vertical-align: sub;
 	display: inline-block;
 }
+.color-icon-print{
+	background: url(/public/images/print.png) no-repeat;
+	width: 28px;
+	height: 21px;
+	margin-right: 4px;
+	vertical-align: sub;
+	display: inline-block;
+}
 .color-icon-date{
 	background: url(/public/images/date.png) no-repeat;
 	width: 16px;
