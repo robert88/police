@@ -12,6 +12,7 @@
 
 .layui-table-blue .pageFooter-wrap{
     position:relative;
+    min-height:34px;
 }
 .layui-table-blue .pageFooter{
     position: absolute;
@@ -41,8 +42,16 @@
 .layui-table-gray-title tr td.title{
 background: #eee;
     text-align: right;
-    width: 10%;
+    min-width:140px;
+    width: 14%;
 }
+.layui-table-blue .layui-table .btn-wrap-three{
+width:125px;
+}
+.layui-table-gray-title tr td{
+width:16%;}
  .layui-table-gray-title tr:hover {
     background-color: transparent;
 }
+.layui-table-wrap{
+overflow:auto;}
