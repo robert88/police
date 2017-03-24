@@ -1,8 +1,5 @@
 <div class='ls-container'>
 
-    <div class="turnback">
-        <a onclick="history.back(-1)" class="layui-btn layui-btn-primary">返回</a>
-    </div>
 
     <!--s:受案不规范-->
     <form class="layui-form layui-form-pane1" action="">
@@ -21,7 +18,7 @@
             <a class="layui-btn layui-btn-opa-icon adminUploadBtn"><span class="color-icon-adminupload"></span>管理员文档上传</a>
         </div>
 
-
+        <div class="layui-table-wrap layui-table-blue">
             <table class="layui-table" lay-even>
                 <thead>
                 <tr>
@@ -32,8 +29,9 @@
                     </th>
                     <th>文档编号</th>
                     <th>文档名称</th>
-                    <th>关键字</th>
-                    <th>最后修订时间</th>
+                    <th>查阅权限组</th>
+                    <th>最新修订时间</th>
+                    <th>修订人</th>
                     <th>操作</th>
                 </tr>
                 </thead>
@@ -46,63 +44,14 @@
                     </td>
                     <td>2284000</td>
                     <td><a href="刑事案件办理流程.doc" target="_blank"><i class="color-icon-wordicon"></i>刑事案件办理流程.doc</a></td>
-                    <td>刑事,流程,管辖,刑事诉讼,证据,逮捕,讯问犯罪嫌疑人,侦查,刑事司...</td>
+                     <td>法制组</td>
                     <td>2016-12-12 10:22</td>
+                    <td>张三</td>
                     <td>
-                        <div class="btn-wrap">
-                            <a class="layui-btn layui-btn-warm layui-btn-small">编辑</a><a
-                                class="layui-btn layui-btn-danger layui-btn-small">删除</a>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox">
-                        <div class="layui-unselect layui-form-checkbox layui-form-checked"><i
-                                class="layui-icon"></i></div>
-                    </td>
-                    <td>2284000</td>
-                    <td><a href="刑事案件办理流程.xls" target="_blank"><i class="color-icon-excelicon"></i>刑事案件办理流程.xls</a></td>
-                    <td>刑事,流程,管辖,刑事诉讼,证据,逮捕,讯问犯罪嫌疑人,侦查,刑事司...</td>
-                    <td>2016-12-12 10:22</td>
-                    <td>
-                        <div class="btn-wrap">
-                            <a class="layui-btn layui-btn-warm layui-btn-small">编辑</a><a
-                                class="layui-btn layui-btn-danger layui-btn-small">删除</a>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox">
-                        <div class="layui-unselect layui-form-checkbox layui-form-checked"><i
-                                class="layui-icon"></i></div>
-                    </td>
-                    <td>2284000</td>
-                    <td><a href="刑事案件办理流程.pdf" target="_blank"><i class="color-icon-pdficon"></i>刑事案件办理流程.pdf</a></td>
-                    <td>刑事,流程,管辖,刑事诉讼,证据,逮捕,讯问犯罪嫌疑人,侦查,刑事司...</td>
-                    <td>2016-12-12 10:22</td>
-                    <td>
-                        <div class="btn-wrap">
-                            <a class="layui-btn layui-btn-warm layui-btn-small">编辑</a><a
-                                class="layui-btn layui-btn-danger layui-btn-small">删除</a>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox">
-                        <div class="layui-unselect layui-form-checkbox layui-form-checked"><i
-                                class="layui-icon"></i></div>
-                    </td>
-                    <td>2284000</td>
-                    <td><a href="刑事案件办理流程.jpg" target="_blank"><i class="color-icon-jpgicon"></i>刑事案件办理流程.jpg</a></td>
-                    <td>刑事,流程,管辖,刑事诉讼,证据,逮捕,讯问犯罪嫌疑人,侦查,刑事司...</td>
-                    <td>2016-12-12 10:22</td>
-                    <td>
-                        <div class="btn-wrap">
-                            <a class="layui-btn layui-btn-warm layui-btn-small">编辑</a><a
-                                class="layui-btn layui-btn-danger layui-btn-small">删除</a>
+                        <div class="btn-wrap btn-wrap-three">
+                            <a class="layui-text-warm layui-link">修订</a>
+                             <a class="layui-text-warm layui-link">下载</a>
+                            <a class="layui-text-warm layui-link">删除</a>
                         </div>
                     </td>
                 </tr>
@@ -117,16 +66,14 @@
                                         class="layui-icon"></i></div>
                                 <span class="mr30">全选</span>
                                 <a class="layui-btn layui-btn-opa delSelectItem">删除所选</a>
-                                <a class="layui-btn layui-btn-opa  ">搜索记录</a>
-                                <a class="layui-btn layui-btn-opa  ">查阅记录</a>
-                                <a class="layui-btn layui-btn-opa  ">上传记录</a>
                             </div>
-                            <div id="pageFooter"></div>
+                            <div class="pageFooter"></div>
                         </div>
                     </td>
                 </tr>
                 </tfoot>
             </table>
+            </div>
     </form>
     <!--e:受案不规范-->
 
