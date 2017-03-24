@@ -17,3 +17,121 @@
     margin-left: -359px;
     margin-top: -19px;
 }
+<!--s:tab2 接警记录-->
+			<div class="layui-tab-item layui-table-blue">
+			<form class="layui-form layui-form-panel">
+				<div class="layui-form-item searchList">
+				<div class="search-middle-gray ptb20">
+					<div class="layui-form-search-center-comb">
+						<div class="layui-inline">
+							<label class="layui-input-inline">案（事）件编号：</label>
+							<div class="layui-input-inline">
+							<input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off" class="layui-input"/>
+							</div>
+						</div>
+						<div class="layui-inline">
+							<label class="layui-input-inline">案（事）件类别：</label>
+							<div class="layui-input-inline">
+							<input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off" class="layui-input"/>
+							</div>
+						</div>
+						<div class="layui-inline">
+							<label class="layui-input-inline">关键字：</label>
+							<div class="layui-input-inline">
+							<input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off" class="layui-input"/>
+							</div>
+						</div>
+						<div class="layui-inline">
+							<label class="layui-input-inline">案件状态：</label>
+							<div class="layui-input-inline">
+							<input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off" class="layui-input"/>
+							</div>
+						</div>
+						<div class="layui-inline">
+							<label class="layui-input-inline">发案时间：</label>
+							<div class="layui-input-inline">
+							<input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off" class="layui-input"/>
+							</div>
+						</div>
+						<div class="layui-inline">
+							<label class="layui-input-inline">录入时间：</label>
+							<div class="layui-input-inline">
+							<input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off" class="layui-input"/>
+							</div>
+						</div>
+						<div class="layui-inline">
+							<label class="layui-input-inline">发案地点：</label>
+							<div class="layui-input-inline">
+							<input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off" class="layui-input"/>
+							</div>
+						</div>
+						<div class="layui-inline">
+							<label class="layui-input-inline">报案人：</label>
+							<div class="layui-input-inline">
+							<input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off" class="layui-input"/>
+							</div>
+						</div>
+						<div class="layui-inline">
+							<label class="layui-input-inline">嫌疑人：</label>
+							<div class="layui-input-inline">
+							<input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off" class="layui-input"/>
+							</div>
+						</div>
+						<div class="layui-inline">
+							<label class="layui-input-inline">所属辖区：</label>
+							<div class="layui-input-inline">
+							<input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off" class="layui-input"/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="layui-form-search-footer tc mt10 mb20">
+					<div class="layui-inline">
+						<a class="layui-btn layui-btn-opa mr30">筛选</a>
+					</div>
+					<div class="fr mr30">
+						<a class="layui-btn layui-btn-opa"> <span class="color-icon-save"></span>导出</a>
+					</div>
+				</div>
+				</div>	
+				<div class="layui-table">
+					<table class="layui-table">
+						<thead>
+							<tr>
+								<th>报警时间</th>
+								<th>接警单号</th>
+								<th>行政区划</th>
+								<th>管辖单位</th>
+								<th>报警类别</th>
+								<th>报警类型</th>
+								<th>报警细类</th>
+								<th>报警人</th>
+								<th>案发地址</th>
+								<th>报警内容</th>
+								<th>处理类型</th>
+								<th>派警时间</th>
+								<th>派警单号</th>
+								<th>受警员姓名</th>
+								<th>反馈时间</th>
+								<th>反馈单位</th>
+								<th>案件类别</th>
+								<th>出警情况</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+								<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+								<td></td><td></td><td></td><td>
+								<div class="btn-wrap">
+									<a class="layui-text-wram layui-link">编辑</a></div>
+								</td></tr></tbody>
+					</table>
+					<div class="layui-form no-border pageFooter-wrap">
+						<div class="pageFooter"></div>
+					</div>
+				</div>
+			</form>
+			</div>
+<!--s:tab2 接警记录-->
