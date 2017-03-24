@@ -1,5 +1,5 @@
 require("/web/useForm.js");
-
+require("/web/usePage.js");
 require("web/btnTab.js");
 
 layui.use(['element', 'layer'], function(){
