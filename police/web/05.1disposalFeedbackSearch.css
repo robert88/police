@@ -1,20 +1,11 @@
-.layui-form{
-    border:1px solid #e6e6e6;
-    background: #fafafa;
-    position: relative;
-    height: 35rem;
+@import url(/web/redForm.css);
+@import url(/web/redTable.css);
+.layui-tab-title li.layui-this{
+    background: #fff;
 }
-.layui-form-wrap{
-    position: relative;
-    height: 100%;
-    background: url(/public/images/bg.png) no-repeat center center;
-
+.layui-tab-title li {
+    background: #f3f3f3;
 }
-.layui-form-item{
-    position:absolute;
-    left:50%;
-    top:50%;
-    margin-left: -359px;
-    margin-top: -19px;
+.layui-table, .layui-table table {
+ margin: 10px 0
 }
-

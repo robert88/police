@@ -6,17 +6,96 @@
             案件分析
         </div>
 
-        <div class="layui-form-item">
-            <div class="layui-inline">
-                <label class="layui-form-label">受立案编号</label>
-                <div class="layui-input-inline">
-                    <input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off"
-                           class="layui-input">
+        <div class="layui-form-item searchList">
+            <div class="search-middle-gray ptb20">
+                <div class="layui-form-search-center-three">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">受(立)案编号：</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off" class="layui-input"/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-date-range">
+                        <label class="layui-form-label">时间段：</label>
+                        <div class="layui-input-inline" style="width: 217px;">
+                            <input required="" type="text"  placeholder="选择日期" class="layui-input layui-date-start">
+                            <i class="color-icon-date"></i>
+                        </div>
+                        <span class="layui-form-mid" style="width: 118px;text-align: center">至</span>
+                        <div class="layui-input-inline" style="  width: 217px;">
+                            <input required="" type="text"  placeholder="选择日期"  class="layui-input layui-date-end">
+                            <i class="color-icon-date"></i>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">行政区划：</label>
+                        <div class="layui-input-inline">
+                            <select name="quiz">
+                                <option value="">全部</option>
+                                <option value="你工作的第一个城市">你工作的第一个城市</option>
+                                <option value="你的工号" disabled="">你的工号</option>
+                                <option value="你最喜欢的老师">你最喜欢的老师</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">接警方式：</label>
+                        <div class="layui-input-inline">
+                            <select name="quiz">
+                                <option value="">全部</option>
+                                <option value="你工作的第一个城市">你工作的第一个城市</option>
+                                <option value="你的工号" disabled="">你的工号</option>
+                                <option value="你最喜欢的老师">你最喜欢的老师</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">案件状态：</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off" class="layui-input"/>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">所属辖区：</label>
+                        <div class="layui-input-inline">
+                            <select name="quiz">
+                                <option value="">全部</option>
+                                <option value="你工作的第一个城市">你工作的第一个城市</option>
+                                <option value="你的工号" disabled="">你的工号</option>
+                                <option value="你最喜欢的老师">你最喜欢的老师</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">监督异常：</label>
+                        <div class="layui-input-inline">
+                            <select name="quiz">
+                                <option value="">全部</option>
+                                <option value="你工作的第一个城市">你工作的第一个城市</option>
+                                <option value="你的工号" disabled="">你的工号</option>
+                                <option value="你最喜欢的老师">你最喜欢的老师</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">超期预警：</label>
+                        <div class="layui-input-inline">
+                            <select name="quiz">
+                                <option value="">全部</option>
+                                <option value="你工作的第一个城市">你工作的第一个城市</option>
+                                <option value="你的工号" disabled="">你的工号</option>
+                                <option value="你最喜欢的老师">你最喜欢的老师</option>
+                            </select>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+            <div class="layui-form-search-footer tc mt10 mb20">
+                <div class="layui-inline">
+                    <a class="layui-btn layui-btn-opa mr30">生成图表</a>
+                </div>
 
-            <div class="layui-inline">
-                <a class="layui-btn layui-btn-opa mr30">生成图表</a>
             </div>
         </div>
 
@@ -26,6 +105,9 @@
 
         <div class="layui-form-item echat-title">
             最近一月接处警情况分析
+            <div class="fr mr30">
+                <a class="layui-btn layui-btn-opa"> <span class="color-icon-save"></span>导出</a>
+            </div>
         </div>
 
         <div class="layui-form-item echat-wrap">
@@ -43,7 +125,7 @@
                     <i class="color-icon-date"></i>
                 </div>
                 <div class="layui-input-inline">
-                    <a class="layui-btn layui-btn-opa mr30">生成图表</a>
+                    <a class="layui-btn layui-btn-opa ml30">生成图表</a>
                 </div>
             </div>
             <div class="echat-month-reception echat-contain"></div>
@@ -58,6 +140,9 @@
 
         <div class="layui-form-item echat-title">
             案件异常分析
+            <div class="fr mr30">
+                <a class="layui-btn layui-btn-opa"> <span class="color-icon-save"></span>导出</a>
+            </div>
         </div>
 
         <div class="layui-form-item echat-wrap">
@@ -69,6 +154,9 @@
 
         <div class="layui-form-item echat-title">
             各平台数据分析
+            <div class="fr mr30">
+            <a class="layui-btn layui-btn-opa"> <span class="color-icon-save"></span>导出</a>
+        </div>
         </div>
             
         <div class="layui-form-item echat-wrap">

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>短信发送</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection">
+
+    <!--start mergeCss:main.min-->
+    <link rel="stylesheet" type="text/css" href="/public/css/common/layui.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/icomoon/style.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="08.2overdueEmail.css">
+    <!--end mergeCss-->
+
+    <!--start mergeJs:lib.min-->
+    <script src="/public/js/lib/jquery-1.12.4.js"></script>
+    <script src="/public/js/common/prototype.js"></script>
+    <script src="/public/js/module/lay/layui.js"></script>
+    <script src="08.2overdueEmail.js"></script>
+    <!--<script src="/public/js/common/setREM.js"></script>-->
+    <!--end mergeJs-->
+
+
+</head>
+
+<body>
+
+<!--s:主题部分-->
+
+<div class='ls-container'>
+
+    <!--s:接警登记表-->
+    <form class="layui-form layui-form-pane1" action="">
+
+        <div class="layui-form-item ">
+            <h3 class="big-title">短信发送</h3>
+
+            <table class="layui-table layui-table-gray-title">
+                <tbody>
+                <tr>
+                    <td class="title">案件编号：</td>
+                    <td>14010020170100300855</td>
+                    <td class="title">立案编号：</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="title">接警单号：</td>
+                    <td></td>
+                    <td class="title">所属单位：</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="title">异常描述：</td>
+                    <td colspan="3"></td>
+                </tr>
+                <tr>
+                    <td class="title">处警人信息：</td>
+                    <td></td>
+                    <td class="title">电话：</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="title">通知内容：</td>
+                    <td colspan="3"></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div class="layui-form-item">
+                <div class="layui-input-block subBtn-wrap2 tc">
+                    <button class="layui-btn subBtn mr30 layui-btn-warn" lay-submit="" lay-filter="*">发送</button>
+                    <button class="layui-btn" onclick="window.close()">关闭</button>
+                </div>
+            </div>
+        </div>
+
+    </form>
+    <!--e:接警登记表-->
+
+</div>
+<!--e:主题部分-->
+
+</body>
+
+</html>
