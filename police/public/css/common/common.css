@@ -1,4 +1,4 @@
-﻿body{
+body{
 	min-height: 500px;
 	min-width:1060px;
 	color:#666;
@@ -163,6 +163,9 @@ header .login{
 }
 .mr30{
 	margin-right:30px ;
+}
+.ml30{
+margin-left:30px;
 }
 .mt10{
 	margin-top:10px ;
