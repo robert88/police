@@ -48,6 +48,9 @@ background: #eee;
 .layui-table-blue .layui-table .btn-wrap-three{
 width:125px;
 }
+.layui-table-blue .layui-table .lay-input-block{
+margin-left:125px;
+}
 .layui-table-gray-title tr td{
 width:16%;}
  .layui-table-gray-title tr:hover {
