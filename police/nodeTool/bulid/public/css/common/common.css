@@ -13,7 +13,7 @@ header{
 	height: 5rem;
 	padding-left:150px;
 	line-height: 5rem;
-	font-size: 1rem;
+	font-size: 14px;
 }
 .color-icon-clock{
 	background: url(/public/images/clock.png);
@@ -333,6 +333,8 @@ position:absolute;
 width:8px;
 height:8px;
 border-radius:50%;
+	left: 67%;
+	top: 10px;
 }
 .btn-group-tab .layui-tab-title,.btn-group-tab .layui-tab-title .layui-this:after{
 	border:none;
