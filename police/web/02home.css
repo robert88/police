@@ -1,5 +1,6 @@
 .ls-container .top-group{
 	margin:3.75rem 0;
+	font-size: 14px;
 	/*border:1px solid #c1c1c1;*/
 }
 .ls-container .top-group:after{
