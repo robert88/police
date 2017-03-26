@@ -38,13 +38,19 @@ td{
 .layui-form-item-wrap {
 	max-width: 1047px;
 }
-.layui-form-detail-title{
+.page-group-tab .layui-tab-title{
 	height:45px;
 	background: #0aa5ff;
 	line-height: 45px;
 	color:#fff;
 }
-.layui-form-detail-title a{
+.page-group-tab .layui-tab-title .layui-this:after{
+	display: none;
+}
+.layui-tab-title .layui-this {
+	color: #fff;
+}
+.page-group-tab .layui-tab-title li{
 	display: inline-block;
 	height:100%;
 	padding:0 20px;
@@ -52,18 +58,21 @@ td{
 	text-align: center;
 	position: relative;
 }
-.layui-form-detail-title a.active{
+.page-group-tab .layui-tab-title  .layui-this{
 	background: #4085c8;
 }
-.layui-form-detail-title a.active .icon-up-dir{
+.page-group-tab .layui-tab-title .layui-this a .icon-up-dir{
 	display: block;
 }
-.layui-form-detail-title .space{
+.page-group-tab .layui-tab-title .space{
 	color: #4085c8;
 	position: absolute;
 	right:0;
 }
-.layui-form-detail-title .icon-up-dir{
+.page-group-tab .layui-tab-title .space-hide{
+	display: none;
+}
+.page-group-tab .layui-tab-title .icon-up-dir{
 	display: none;
 	position: absolute;
 	left:50%;

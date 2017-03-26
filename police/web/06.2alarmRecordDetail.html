@@ -3,139 +3,143 @@
 	<div class="turnback col">
 		<a onclick="history.back(-1)" class="layui-btn layui-btn-primary fr mr10">返回</a>
 	</div>
+	<div class="layui-tab page-group-tab" lay-filter="pageTab">
+		<ul class="layui-tab-title">
+			<li class="layui-this"><a >案件概要情况<i class="icon-up-dir"></i><span class="fr space">|</span></a></li>
+			<li><a href="/web/selfPage/testPage.html">案件受理<i class="icon-up-dir"></i><span class="fr space">|</span></a></li>
+			<li><a >调查情况<i class="icon-up-dir"></i><span class="fr space">|</span></a></li>
+			<li><a >作案分析<i class="icon-up-dir"></i><span class="fr space">|</span></a></li>
+			<li><a >案件处理信息<i class="icon-up-dir"></i><span class="fr space">|</span></a></li>
+			<li><a >现场勘察信息<i class="icon-up-dir"></i><span class="fr space">|</span></a></li>
+			<li><a >破案信息<i class="icon-up-dir"></i><span class="fr space">|</span></a></li>
+			<li><a >相关文书<i class="icon-up-dir"></i><span class="fr space">|</span></a></li>
+			<li><a >备考文书信息<i class="icon-up-dir"></i><span class="fr space">|</span></a></li>
+			<li><a >关联信息<i class="icon-up-dir"></i><span class="fr space">|</span></a></li>
+			<li><a >立/破案报告表<i class="icon-up-dir"></i><span class="fr space">|</span></a></li>
+			<li><a >110信息<i class="icon-up-dir"></i><span class="fr space">|</span></a></li>
+			<li><a >审核流程<i class="icon-up-dir"></i><span class="fr space">|</span></a></li>
+		</ul>
+		<div class="layui-tab-content">
+			<!--s:tab1 系统信息-->
+			<div class="layui-tab-item layui-show">
+				<!--s:接警登记表-->
+				<form class="layui-form layui-form-pane1" action="">
 
-	<!--s:接警登记表-->
-	<form class="layui-form layui-form-pane1" action="">
-
-
-		<div class="layui-form-item  layui-form-detail-title">
-			<a class="active">案件概要情况<i class="icon-up-dir"></i><span class="fr space">|</span></a>
-			<a >案件受理<i class="icon-up-dir"></i><span class="fr space">|</span></a>
-			<a >调查情况<i class="icon-up-dir"></i><span class="fr space">|</span></a>
-			<a >作案分析<i class="icon-up-dir"></i><span class="fr space">|</span></a>
-			<a >案件处理信息<i class="icon-up-dir"></i><span class="fr space">|</span></a>
-			<a >现场勘察信息<i class="icon-up-dir"></i><span class="fr space">|</span></a>
-			<a >破案信息<i class="icon-up-dir"></i><span class="fr space">|</span></a>
-			<a >相关文书<i class="icon-up-dir"></i><span class="fr space">|</span></a>
-			<a >备考文书信息<i class="icon-up-dir"></i><span class="fr space">|</span></a>
-			<a >关联信息<i class="icon-up-dir"></i><span class="fr space">|</span></a>
-			<a >立/破案报告表<i class="icon-up-dir"></i><span class="fr space">|</span></a>
-			<a >110信息<i class="icon-up-dir"></i><span class="fr space">|</span></a>
-			<a >审核流程<i class="icon-up-dir"></i><span class="fr space">|</span></a>
-		</div>
-
-		<div class="layui-form-item layui-form-item-wrap">
-			<h3 class="big-title">接警记录详情</h3>
-			<table class="layui-table">
-				<tbody>
-				<tr>
-					<td class="title">案件编号：</td>
-					<td></td>
-					<td class="title">立案编号：</td>
-					<td></td>
-					<td class="title">受理编号：</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td class="title">受理时间：</td>
-					<td></td>
-					<td class="title">案件类别：</td>
-					<td></td>
-					<td class="title">发生时间：</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td class="title">发生地点：</td>
-					<td colspan="3"></td>
-					<td class="title">发生地域：</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td class="title">管辖队所：</td>
-					<td></td>
-					<td class="title">案件状态：</td>
-					<td></td>
-					<td class="title">立案时间：</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td class="title">破案时间：</td>
-					<td></td>
-					<td class="title">破案单位：</td>
-					<td colspan="3"></td>
-				</tr>
-				<tr>
-					<td class="title">简要案情：</td>
-					<td colspan="5"></td>
-				</tr>
-				<tr>
-					<td class="title">报案人情况：</td>
-					<td colspan="5"></td>
-				</tr>
-				<tr>
-					<td class="title">受害人情况：</td>
-					<td colspan="5"></td>
-				</tr>
-				<tr>
-					<td class="title">损失物品情况：</td>
-					<td colspan="5"></td>
-				</tr>
-				<tr>
-					<td class="title">作案手段特点：</td>
-					<td colspan="5"></td>
-				</tr>
-				<tr>
-					<td class="title">现场勘验情况：</td>
-					<td colspan="5"></td>
-				</tr>
-				<tr>
-					<td class="title">案件分析及作案人特征刻划：</td>
-					<td colspan="5"></td>
-				</tr>
-				<tr>
-					<td class="title">案件破获情况：</td>
-					<td colspan="5"></td>
-				</tr>
-				<tr>
-					<td class="title">嫌疑人情况：</td>
-					<td colspan="5"></td>
-				</tr>
-
-
-				</tbody>
-			</table>
-		</div>
-
-		<div class="layui-form-item layui-form-item-wrap">
-
-			<table class="layui-table">
-				<tbody>
-
-				<tr>
-					<td class="title">填表单位：</td>
-					<td></td>
-					<td class="title">填表人：</td>
-					<td></td>
-					<td class="title">填表日期：</td>
-					<td></td>
-				</tr>
-				</tbody>
-			</table>
-		</div>
+					<div class="layui-form-item layui-form-item-wrap">
+						<h3 class="big-title">接警记录详情</h3>
+						<table class="layui-table">
+							<tbody>
+							<tr>
+								<td class="title">案件编号：</td>
+								<td></td>
+								<td class="title">立案编号：</td>
+								<td></td>
+								<td class="title">受理编号：</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="title">受理时间：</td>
+								<td></td>
+								<td class="title">案件类别：</td>
+								<td></td>
+								<td class="title">发生时间：</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="title">发生地点：</td>
+								<td colspan="3"></td>
+								<td class="title">发生地域：</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="title">管辖队所：</td>
+								<td></td>
+								<td class="title">案件状态：</td>
+								<td></td>
+								<td class="title">立案时间：</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="title">破案时间：</td>
+								<td></td>
+								<td class="title">破案单位：</td>
+								<td colspan="3"></td>
+							</tr>
+							<tr>
+								<td class="title">简要案情：</td>
+								<td colspan="5"></td>
+							</tr>
+							<tr>
+								<td class="title">报案人情况：</td>
+								<td colspan="5"></td>
+							</tr>
+							<tr>
+								<td class="title">受害人情况：</td>
+								<td colspan="5"></td>
+							</tr>
+							<tr>
+								<td class="title">损失物品情况：</td>
+								<td colspan="5"></td>
+							</tr>
+							<tr>
+								<td class="title">作案手段特点：</td>
+								<td colspan="5"></td>
+							</tr>
+							<tr>
+								<td class="title">现场勘验情况：</td>
+								<td colspan="5"></td>
+							</tr>
+							<tr>
+								<td class="title">案件分析及作案人特征刻划：</td>
+								<td colspan="5"></td>
+							</tr>
+							<tr>
+								<td class="title">案件破获情况：</td>
+								<td colspan="5"></td>
+							</tr>
+							<tr>
+								<td class="title">嫌疑人情况：</td>
+								<td colspan="5"></td>
+							</tr>
 
 
-		<div class="layui-form-item layui-form-item-wrap">
-			<div class="layui-form-search-footer tc mt10 mb20">
-				<div class="layui-inline mr30">
-					<a class="layui-btn layui-btn-opa mr30"><span class="color-icon-save"></span>导出</a>
-				</div>
-				<div class="layui-inline mr30">
-					<a class="layui-btn layui-btn-opa" onclick="window.print()"> <span class="color-icon-print"></span>打印</a>
-				</div>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="layui-form-item layui-form-item-wrap">
+
+						<table class="layui-table">
+							<tbody>
+
+							<tr>
+								<td class="title">填表单位：</td>
+								<td></td>
+								<td class="title">填表人：</td>
+								<td></td>
+								<td class="title">填表日期：</td>
+								<td></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+
+
+					<div class="layui-form-item layui-form-item-wrap">
+						<div class="layui-form-search-footer tc mt10 mb20">
+							<div class="layui-inline mr30">
+								<a class="layui-btn layui-btn-opa mr30"><span class="color-icon-save"></span>导出</a>
+							</div>
+							<div class="layui-inline mr30">
+								<a class="layui-btn layui-btn-opa" onclick="window.print()"> <span class="color-icon-print"></span>打印</a>
+							</div>
+						</div>
+					</div>
+
+				</form>
+				<!--e:接警登记表-->
 			</div>
-		</div>
+	</div>
 
-	</form>
-	<!--e:接警登记表-->
 
 </div>
