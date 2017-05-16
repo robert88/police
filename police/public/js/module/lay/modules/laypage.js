@@ -2,7 +2,7 @@
  
  @Name : layui.laypage 分页组件
  @Author：贤心
- @License：LGPL
+ @License：MIT
  
  */
 
@@ -74,7 +74,6 @@ layui.define(function(exports){
           }
 
       }
-
     
     //当前组非首组，则输出首页
     if(dict.index > 1 && conf.first && conf.groups !== 0){

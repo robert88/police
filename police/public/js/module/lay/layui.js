@@ -4,7 +4,7 @@
  @Description：经典模块化前端框架
  @Site: www.layui.com
  @Author: 贤心
- @License：LGPL
+ @License：MIT
 
  */
  
@@ -13,9 +13,8 @@
 "use strict";
 
 var Lay = function(){
-  this.v = '1.0.7'; //版本号
+  this.v = '1.0.9_rls'; //版本号
 };
-
 
 Lay.fn = Lay.prototype;
 
@@ -45,19 +44,16 @@ modules = {
   ,form: 'modules/form' //表单集
   ,upload: 'modules/upload' //上传
   ,tree: 'modules/tree' //树结构
-  ,slide: 'modules/slide' //轮播/滚动
   ,table: 'modules/table' //富表格
   ,element: 'modules/element' //常用元素操作
   ,util: 'modules/util' //工具块
   ,flow: 'modules/flow' //流加载
+  ,carousel: 'modules/carousel' //轮播
   ,code: 'modules/code' //代码修饰器
-  ,single: 'modules/single' //单页应用
-  ,mobile: 'modules/mobile' //移动大模块
-  ,echart: '../../lib/echarts.min' //图表库文件
-
-  ,jquery: '../../lib/jquery-1.12.4' //DOM库（第三方）
+  ,jquery: 'modules/jquery' //DOM库（第三方）
   
-  ,'layui.mod': 'dest/layui.mod' //PC模块合并版
+  ,mobile: 'modules/mobile' //移动大模块 | 若当前为开发目录，则为移动模块入口，否则为移动模块集合
+  ,'layui.all': 'dest/layui.all' //PC模块合并版
 };
 
 config.modules = {}; //记录模块物理路径
@@ -76,20 +72,23 @@ Lay.fn.define = function(deps, callback){
     });
     return this;
   };
+  
   type && (
     callback = deps,
     deps = []
   );
-  if(layui['layui.all']){
+  
+  if(layui['layui.all'] || (!layui['layui.all'] && layui['layui.mobile'])){
     return mods.call(that);
-  };
+  }
+  
   that.use(deps, mods);
   return that;
 };
 
-
 //使用特定模块
 Lay.fn.use = function(apps, callback, exports){
+	//debugger
   var that = this, dir = config.dir = config.dir ? config.dir : getPath;
   var head = doc.getElementsByTagName('head')[0];
 
@@ -111,8 +110,11 @@ Lay.fn.use = function(apps, callback, exports){
   //静态资源host
   config.host = config.host || (dir.match(/\/\/([\s\S]+?)\//)||['//'+ location.host +'/'])[0];
   
-  if(apps.length === 0 || (layui['layui.all'] && modules[item])){
-    return typeof callback === 'function' && callback.apply(layui, exports), that;
+  if(apps.length === 0 
+  || (layui['layui.all'] && modules[item]) 
+  || (!layui['layui.all'] && layui['layui.mobile'] && modules[item])
+  ){
+    return onCallback(), that;
   }
 
   //加载完毕
@@ -132,7 +134,7 @@ Lay.fn.use = function(apps, callback, exports){
 
   //加载模块
   var node = doc.createElement('script'), url =  (
-    modules[item] ? (dir + '') : (config.base || '')
+    modules[item] ? (dir ) : (config.base || '')
   ) + (that.modules[item] || item) + '.js';
   node.async = true;
   node.charset = 'utf-8';
@@ -188,6 +190,7 @@ Lay.fn.getStyle = function(node, name){
 
 //css外部加载器
 Lay.fn.link = function(href, fn, cssname){
+  //debugger
   var that = this, link = doc.createElement('link');
   var head = doc.getElementsByTagName('head')[0];
   if(typeof fn === 'string') cssname = fn;
@@ -202,7 +205,7 @@ Lay.fn.link = function(href, fn, cssname){
     head.appendChild(link);
   }
 
-  if(typeof fn !== 'function') return ;
+  if(typeof fn !== 'function') return that;
   
   //轮询css是否加载完毕
   (function poll() {
@@ -213,11 +216,13 @@ Lay.fn.link = function(href, fn, cssname){
       fn();
     }() : setTimeout(poll, 100);
   }());
+  
+  return that;
 };
 
 //css内部加载器
 Lay.fn.addcss = function(firename, fn, cssname){
-  layui.link(config.dir + 'css/' + firename, fn, cssname);
+  return layui.link(config.dir + 'css/' + firename, fn, cssname);
 };
 
 //图片预加载
@@ -272,22 +277,26 @@ Lay.fn.extend = function(options){
   return that;
 };
 
-//路由
+//路由解析
 Lay.fn.router = function(hash){
-  var hashs = (hash || location.hash).replace(/^#/, '').split('/') || [];
-  var item, param = {
-    dir: []
+  var that = this, hash = hash || location.hash, data = {
+    path: []
+    ,search: {}
+    ,hash: (hash.match(/[^#](#.*$)/) || [])[1] || ''
   };
-  for(var i = 0; i < hashs.length; i++){
-    item = hashs[i].split('=');
-    /^\w+=/.test(hashs[i]) ? function(){
-      if(item[0] !== 'dir'){
-        param[item[0]] = item[1];
-      }
-    }() : param.dir.push(hashs[i]);
-    item = null;
-  }
-  return param;
+  
+  if(!/^#\//.test(hash)) return data; //禁止非路由规范
+  hash = hash.replace(/^#\//, '').replace(/([^#])(#.*$)/, '$1').split('/') || [];
+  
+  //提取Hash结构
+  that.each(hash, function(index, item){
+    /^\w+=/.test(item) ? function(){
+      item = item.split('=');
+      data.search[item[0]] = item[1];
+    }() : data.path.push(item);
+  });
+
+  return data;
 };
 
 //本地存储
@@ -335,6 +344,8 @@ Lay.fn.device = function(key){
         return 'windows';
       } else if(/linux/.test(agent)){
         return 'linux';
+      } else if(/mac/.test(agent)){
+        return 'mac';
       } else if(/iphone|ipod|ipad|ios/.test(agent)){
         return 'ios';
       }
@@ -420,11 +431,5 @@ Lay.fn.event = function(modName, events, params){
 
 win.layui = new Lay();
 
-//将jQuery对象局部暴露给layui
-  layui.define(function(exports){
-    exports('jquery', jQuery);
-  });
-
-  
 }(window);
 
