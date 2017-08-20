@@ -50,7 +50,7 @@ function destroyPage(){
 
 	window.PAGE.destroy = newDestroy;
 }
-
+var fristInit = 0;
 /*自己调用只能调用一次，不然会出现死循环*/
 function hashChange(hash,self) {
 
@@ -60,7 +60,14 @@ function hashChange(hash,self) {
 	hash = hash ? hash : window.PAGE.HOME;
 
 	if(hash.indexOf("#!")==-1){
-		return
+		if(fristInit){
+			return;
+		}else{
+			hash = window.PAGE.HOME;
+			fristInit = 1;
+		}
+	}else{
+		fristInit=0;
 	}
 	var params = $.getParam(hash);
 

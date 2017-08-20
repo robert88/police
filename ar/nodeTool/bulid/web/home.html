@@ -10,35 +10,36 @@
   <meta name="renderer" content="webkit">
   <meta name="description" content="拍多多">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" media="screen">
-  <link rel="stylesheet" href="/mirror/css/glide.css">
-  <link rel="stylesheet" href="/mirror/css/circliful.css">
-  <link rel="stylesheet" href="/mirror/css/fp.css">
-  <link rel="stylesheet" href="/mirror/css/style.css">
-  <link rel="stylesheet" href="/mirror/css/responsive.css">
+  <link rel="stylesheet" href="mirror/css/style.css">
+  <link rel="stylesheet" href="mirror/css/glide.css">
+  <link rel="stylesheet" href="mirror/css/circliful.css">
+  <link rel="stylesheet" href="mirror/css/fp.css">
+  <link rel="stylesheet" href="mirror/css/responsive.css">
 </head>
 
 <body class="fp-viewing-hero" >
 <!--s nav1-->
 <div class="header gb-header show">
-  <div class="logo"> <a href="/"><img src="/mirror/img/logo.png"></a> </div>
+  <div class="logo"> <a href="/"><img src="mirror/img/logo.png"></a> </div>
   <div class="nav">
     <ul>
-      <li><a href="/index.html"><span class="s1">首页</span><span class="s2">Home</span></a></li>
+      <li  class="active"><a href="/index.html"><span class="s1">首页</span><span class="s2">Home</span></a></li>
 
-      <li><a class="scene_option"  data-type="redirect" data-url="#!web/list.html">我的云图<em> Picture</em></a></li>
+      <li><a class="scene_option"  data-type="redirect" data-url="/admin.html#!admin/index.html"><span class="s1">我的云图</span><span class="s2">Picture</span></a></li>
 
-      <li><a class="scene_option"  data-type="redirect" data-url="/admin.html"><span class="s1">个人中心</span><span class="s2">Individual</span></a></li>
+      <li><a class="scene_option"  data-type="redirect" data-url="/admin.html#!admin/account.html"><span class="s1">个人中心</span><span class="s2">Individual</span></a></li>
 
       <li><a href="/index.html#download"><span class="s1">下载</span><span class="s2">Download</span></a></li>
+      <li><a href="/index.html#!/web/join.html"><span class="s1">合作加盟</span><span class="s2">Join</span></a></li>
 
-      <li><a href="/a/news/"><span class="s1">帮助</span><span class="s2">Help</span></a></li>
+      <li><a href="/index.html#!/web/about.html"><span class="s1">帮助</span><span class="s2">Help</span></a></li>
 
     </ul>
     <div class="login"><a id="loginTrigger" class="mr10 scene_option" data-type="logintk">登录</a>/<a class="ml10 scene_option" data-type="registertk">注册</a></div>
   </div>
 </div>
 <div class="gb-nav">
-  <div class="logo"> <a href="/"><img class="img2" src="/mirror/img/logo.png"></a> </div>
+  <div class="logo"> <a href="/"><img class="img2" src="mirror/img/logo.png"></a> </div>
   <div class="gh"> <a href="javascript:void(0);"></a> </div>
 </div>
 <!--e nav1-->
@@ -52,18 +53,21 @@
         <h2><a href="/index.html#home">首页<em>Home</em></a></h2>
       </li>
       <li class="h1">
-        <h2><a class="scene_option"  data-type="redirect" data-url="#!web/list.html">我的云图<em> Picture</em></a></h2>
+        <h2><a class="scene_option"  data-type="redirect" data-url="/admin.html#!admin/index.html">我的云图<em> Picture</em></a></h2>
       </li>
 
       <li class="h2">
-        <h2><a class="scene_option"  data-type="redirect" data-url="#!web/list.html">个人中心<em>Individual</em></a></h2>
+        <h2><a class="scene_option"  data-type="redirect" data-url="/admin.html#!admin/account.html">个人中心<em>Individual</em></a></h2>
       </li>
 
       <li class="h3">
         <h2><a href="/index.html#download">下载<em>Download</em></a></h2>
       </li>
+      <li class="h33">
+        <h2><a href="/index.html#!/web/join.html">合作加盟<em>Join</em></a></h2>
+      </li>
       <li class="h4">
-        <h2><a href="/index.html#help">帮助<em>Help</em></a></h2>
+        <h2><a href="/index.html#!/web/about.html">帮助<em>Help</em></a></h2>
       </li>
 
       <li class="h5">
@@ -91,8 +95,8 @@
         <div class="zprts tabct" style="display: block;">
           <div class="tips errormsg"></div>
           <ul>
-            <li><span><input type="text" name="mobile" class="webtxt user" placeholder="手机号" datatype="m" ajaxurl="/index/login/check_input.html" nullmsg="手机号码不能为空" errormsg="请输入正确的手机号码" maxlength="11"></span></li>
-            <li><span><input type="password" name="pass" class="webtxt psw" placeholder="密码" nullmsg="密码不能为空" errormsg="密码至少6个字符,最多20个字符！" datatype="*6-20"></span></li>
+            <li><span class="user-input"><input type="text" name="mobile" class="webtxt user" placeholder="手机号" datatype="m" ajaxurl="/index/login/check_input.html" nullmsg="手机号码不能为空" errormsg="请输入正确的手机号码" maxlength="11"></span></li>
+            <li><span class="psw-input"><input type="password" name="pass" class="webtxt psw" placeholder="密码" nullmsg="密码不能为空" errormsg="密码至少6个字符,最多20个字符！" datatype="*6-20"></span></li>
             <li>
               <span class="scene_option" data-type="rememberpass">
                 <i class="jz"> </i>
@@ -138,16 +142,17 @@
 </div>
 <!--e登陆页面-->
 
-<script type="text/javascript" src="/mirror/js/jquery-v1.7.2.js"></script>
-<script type="text/javascript" src="/mirror/js/jquery.circliful.js"></script>
-<script type="text/javascript" src="/mirror/js/jquery.queryLoader2.js"></script>
-<script type="text/javascript" src="/mirror/js/jquery.wheel.js"></script>
-<script type="text/javascript" src="/mirror/js/jquery.fullPage.js"></script>
-<script type="text/javascript" src="/mirror/js/validform_v5.3.2_min.js"></script>
-<script type="text/javascript" src="/mirror/js/login.js"></script>
-<script type="text/javascript" src="/mirror/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="mirror/js/jquery-v1.7.2.js"></script>
+<script type="text/javascript" src="mirror/js/jquery.circliful.js"></script>
+<script type="text/javascript" src="mirror/js/jquery.queryLoader2.js"></script>
+<script type="text/javascript" src="mirror/js/jquery.wheel.js"></script>
+<script type="text/javascript" src="mirror/js/jquery.fullPage.js"></script>
+<script type="text/javascript" src="mirror/js/jquery.parallax.min.js"></script>
+<script type="text/javascript" src="mirror/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="mirror/js/validform_v5.3.2_min.js"></script>
+<script type="text/javascript" src="mirror/js/login.js"></script>
 <!--s:主题部分-->
-undefined
+<style  type='text/css'>@charset "UTF-8"; /*../web/home.css*/.page1 { background: url(../img/bg1.jpg) no-repeat center; background-size: cover !important; height: 886px; }  .page1 .arrow, .page1 .nav { z-index: 2; } .page1 .arrow { width: 87px; height: 87px; position: absolute; left: 50%; margin-left: -44px; bottom: 110px; cursor: pointer; display: block; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; } .page1 .arrow table { width: 100%; height: 100%; text-align: center; position: relative; top: 5px; } .page1 .arrow:before, .page1 .arrow:after { content: ''; position: absolute; left: 0; top: 0; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; pointer-events: none } .page1 .arrow:before { width: 88px; height: 88px; border: 1px solid #fff; -moz-transition: all 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955); -o-transition: all 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955); -webkit-transition: all 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955); transition: all 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) } .page1 .arrow:after { width: 86px; height: 86px; border: 2px solid #fff; background-color: rgba(255, 255, 255, 0.1); opacity: 0; -moz-transform: scale(0.5, 0.5); -ms-transform: scale(0.5, 0.5); -webkit-transform: scale(0.5, 0.5); transform: scale(0.5, 0.5); -moz-transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1); -o-transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1); -webkit-transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1); transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1) } .page1 .arrow:hover:before { opacity: 0; -moz-transform: scale(1.5, 1.5); -ms-transform: scale(1.5, 1.5); -webkit-transform: scale(1.5, 1.5); transform: scale(1.5, 1.5); -moz-transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); -o-transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); -webkit-transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) } .page1 .arrow:hover:after { opacity: 1; -moz-transform: scale(1, 1); -ms-transform: scale(1, 1); -webkit-transform: scale(1, 1); transform: scale(1, 1) } .page2 { background: url(../img/bg7.jpg) no-repeat center; background-size: cover !important; height: 964px; } .page2 .wrapper { height: 100%; } .page2 ul { height: 100%; } .page2 li { width: 25%; float: left; display: inline; text-align: center; color: #fff; height: 100%; position: relative;  -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s; transition: all 1s; opacity: 0; -webkit-opacity: 0; -moz-opacity: 0; } .page2 li .bg { position: absolute; left: 0; right: 0; bottom: 0; background: #9a02e0; height: 0; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; } .page2 li.selected .bg { height: 100%; } .page2 li.l2 .bg { background-color: #acd146; } .page2 li.l3 .bg { background-color: #04afa6; } .page2 li.l4 .bg { background-color: #f8c200; } .page2 li .wrap { position: absolute; left: 30px; right: 30px; top: 50%; margin-top: -110px; } .page2 li .ico { width: 109px; height: 109px; border-radius: 109px; margin: 0 auto; background-position: center top; background-repeat: no-repeat; overflow: hidden; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; -webkit-transition-delay: 400ms; transition-delay: 400ms; }             .page2 li.selected .ico { background-position: center bottom; } .page2 li .link { text-align: center; margin-top: 35px; } .page2 li .link a { background: url(../img/img41.png) no-repeat; width: 48px; height: 48px; display: inline-block; } .page2 li .img { position: absolute; left: 0; right: 0; bottom: -200px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; -webkit-transition-delay: 400ms; transition-delay: 400ms; opacity: 0; -webkit-opacity: 0; -moz-opacity: 0; } .page2 li.selected .img { bottom: 0; opacity: 1; -webkit-opacity: 1; -moz-opacity: 1; } .page2 li .img img { display: block; width: 100%; } .page2 li a { color: #fff; text-decoration: none; } .page2 li.selected { } .page2 li.l1 { -webkit-transform: translate3d(-600px, 0, 0); -ms-transform: translate3d(-600px, 0, 0); transform: translate3d(-600px, 0, 0); } .page2 li.l2 { -webkit-transform: translate3d(-300px, 0, 0); -ms-transform: translate3d(-300px, 0, 0); transform: translate3d(-300px, 0, 0); } .page2 li.l3 { -webkit-transform: translate3d(300px, 0, 0); -ms-transform: translate3d(300px, 0, 0); transform: translate3d(300px, 0, 0); } .page2 li.l4 { -webkit-transform: translate3d(600px, 0, 0); -ms-transform: translate3d(600px, 0, 0); transform: translate3d(600px, 0, 0); } .page2.active li { -webkit-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); opacity: 1; -webkit-opacity: 1; -moz-opacity: 1; } .page2 li h2 { margin-top: 20px; font-size: 18px; font-weight: bold; line-height: 1; } .page2 li dl { margin-top: 18px; } .page2 li dd { display: inline; } .page2 li dd span { width: 1px; height: 15px; display: inline-block; background: #fff; margin: 0 15px; } .page2 li p { margin-top: 30px; line-height: 24px; } .page3 { background: url(../img/bg4.jpg) repeat center; height: 1040px; } .page3 .wrapper { position: absolute; left: 50%; margin-left: -600px; top: 50%; margin-top: -400px; } .page3 .head { height: 60px; position: relative; padding-left: 350px; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; -webkit-transition-delay: 600ms; transition-delay: 600ms; } .page3.active .head {  } .page3 .head .img { position: absolute; left: -400px; top: 0; transition: all 1s ease 0s; -webkit-transition: all 1s ease 0s; -ms-transition: all 1s ease 0s; opacity: 0; -webkit-opacity: 0; -ms-opacity: 0; } .page3.active .head .img { left: 0; opacity: 1; -webkit-opacity: 1; -ms-opacity: 1; } .page3 .head .nav { padding-top: 30px; } .page3 .head .nav li { display: inline; margin-right: 30px; } .page3 .head .sort { position: absolute; left: 1500px; bottom: 0; padding-top: 20px; color: #e9930b; text-transform: uppercase; transition: all 1s ease 0s; -webkit-transition: all 1s ease 0s; -ms-transition: all 1s ease 0s; opacity: 0; -webkit-opacity: 0; -ms-opacity: 0; } .page3.active .head .sort { left: 610px; opacity: 1; -webkit-opacity: 1; -ms-opacity: 1; } .page3 .head .sort a { color: #e9930b; } .page3 .head .sort dt { position: absolute; left: 0; top: 0; } .page3 .head .sort dd { display: inline; } .page3 .head .sort dd span { margin: 0 10px; display: inline-block; width: 1px; height: 11px; background: #f19f1c; } .page3 .body { margin-top: 45px; position: relative; top: 0; } .page3 .body ul { height: auto; overflow: hidden; width: 105%; } .page3 .body li { width: 290px; height: 190px; position: relative; float: left; display: inline; margin-right: 16px; margin-bottom: 16px; overflow: hidden; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s; transition: all 1s; opacity: 0; -webkit-opacity: 0; -moz-opacity: 0; -webkit-transform: translate3d(0, 100px, 0); -ms-transform: translate3d(0, 100px, 0); transform: translate3d(0, 100px, 0); } .page3.active .body li { opacity: 1; -webkit-opacity: 1; -moz-opacity: 1; -webkit-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } .page3.active .body li:nth-child(2) { -webkit-transition-delay: 200ms; transition-delay: 200ms; } .page3.active .body li:nth-child(3) { -webkit-transition-delay: 400ms; transition-delay: 400ms; } .page3.active .body li:nth-child(4) { -webkit-transition-delay: 600ms; transition-delay: 600ms; } .page3.active .body li:nth-child(5) { -webkit-transition-delay: 800ms; transition-delay: 800ms; } .page3.active .body li:nth-child(6) { -webkit-transition-delay: 1000ms; transition-delay: 1000ms; } .page3.active .body li:nth-child(7) { -webkit-transition-delay: 1200ms; transition-delay: 1200ms; } .page3.active .body li:nth-child(8) { -webkit-transition-delay: 1400ms; transition-delay: 1400ms; } .page3.active .body li:nth-child(9) { -webkit-transition-delay: 1600ms; transition-delay: 1600ms; } .page3.active .body li:nth-child(10) { -webkit-transition-delay: 1800ms; transition-delay: 1800ms; } .page3.active .body li:nth-child(11) { -webkit-transition-delay: 2000ms; transition-delay: 2000ms; } .page3.active .body li:nth-child(12) { -webkit-transition-delay: 2200ms; transition-delay: 2200ms; } .page3 .body li .img img { -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s; transition: all 1s; } .page3 .body li a:hover .img img { transform: scale(1.2); } .page3 .body li .brand { background: rgba(233,148,11,0.83); position: absolute; left: 0; right: 0; top: 0; bottom: 0; text-align: center; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; opacity: 0; -webkit-opacity: 0; -moz-opacity: 0; } .page3 .body li a:hover .brand { opacity: 1; -webkit-opacity: 1; -moz-opacity: 1; } .page3 .body li .brand table { width: 100%; height: 100%; text-align: center; } .page3 .jian { width: 46px; height: 46px; border-radius: 46px; display: inline-block; position: relative; } .jian:before, .jian:after { content: ''; position: absolute; left: 0; top: 0; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; pointer-events: none } .jian:before { width: 46px; height: 46px; border: 1px solid #f19f1c; -moz-transition: all 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955); -o-transition: all 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955); -webkit-transition: all 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955); transition: all 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) } .jian:after { width: 46px; height: 46px; border: 1px solid #f19f1c; background-color: rgba(255, 255, 255, 0.1); opacity: 0; -moz-transform: scale(0.5, 0.5); -ms-transform: scale(0.5, 0.5); -webkit-transform: scale(0.5, 0.5); transform: scale(0.5, 0.5); -moz-transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1); -o-transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1); -webkit-transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1); transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1) } .jian:hover:before { opacity: 0; -moz-transform: scale(1.5, 1.5); -ms-transform: scale(1.5, 1.5); -webkit-transform: scale(1.5, 1.5); transform: scale(1.5, 1.5); -moz-transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); -o-transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); -webkit-transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) } .jian:hover:after { opacity: 1; -moz-transform: scale(1, 1); -ms-transform: scale(1, 1); -webkit-transform: scale(1, 1); transform: scale(1, 1) } .dlay200 { -webkit-transition-delay: 200ms; transition-delay: 200ms; } .dlay400 { -webkit-transition-delay: 400ms; transition-delay: 400ms; } .dlay600 { -webkit-transition-delay: 600ms; transition-delay: 600ms; } .dlay800 { -webkit-transition-delay: 800ms; transition-delay: 800ms; } .dlay1000 { -webkit-transition-delay: 1000ms; transition-delay: 1000ms; } .dlay1200 { -webkit-transition-delay: 1200ms; transition-delay: 1200ms; } .dlay1400 { -webkit-transition-delay: 1400ms; transition-delay: 1400ms; } .dlay1600 { -webkit-transition-delay: 1600ms; transition-delay: 1600ms; } .dlay1800 { -webkit-transition-delay: 1800ms; transition-delay: 1800ms; } .dlay2000 { -webkit-transition-delay: 2000ms; transition-delay: 2000ms; } .dlay2200 { -webkit-transition-delay: 2200ms; transition-delay: 2200ms; } .page4 { background: url(../img/bg5.jpg) no-repeat center; background-size: cover !important; height: 998px; } .page4 .wrapper { position: absolute; left: 50%; margin-left: -600px; top: 50%; margin-top:-312px; } .page4 .animate { -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s; transition: all 1s; opacity: 0; -webkit-opacity: 0; -moz-opacity: 0; } .page4.active .animate{ opacity: 1; -webkit-opacity: 1; -moz-opacity: 1; } .page4 .turnleft { -webkit-transform: translate3d(-300px, 0, 0); -ms-transform: translate3d(-300px, 0, 0); transform: translate3d(-300px, 0, 0); } .page4.active .turnleft{ -webkit-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } .page4 .turndown { -webkit-transform: translate3d( 0,-300px, 0); -ms-transform: translate3d( 0,-300px, 0); transform: translate3d( 0, -300px,0); } .page4.active .turndown{ -webkit-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } .page4 .wen { width: 46px; height: 46px; border-radius: 46px; display: inline-block; position: relative; } .page4 .wen:before, .wen:after { content: ''; position: absolute; left: 0; top: 0; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; pointer-events: none } .page4 .wen:before { width: 46px; height: 46px; border: 1px solid #fff; -moz-transition: all 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955); -o-transition: all 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955); -webkit-transition: all 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955); transition: all 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) } .page4 .wen:after { width: 46px; height: 46px; border: 1px solid #fff; background-color: rgba(255, 255, 255, 0.1); opacity: 0; -moz-transform: scale(0.5, 0.5); -ms-transform: scale(0.5, 0.5); -webkit-transform: scale(0.5, 0.5); transform: scale(0.5, 0.5); -moz-transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1); -o-transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1); -webkit-transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1); transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1) } .page4 .wen:hover:before { opacity: 0; -moz-transform: scale(1.5, 1.5); -ms-transform: scale(1.5, 1.5); -webkit-transform: scale(1.5, 1.5); transform: scale(1.5, 1.5); -moz-transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); -o-transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); -webkit-transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) } .page4 .wen:hover:after { opacity: 1; -moz-transform: scale(1, 1); -ms-transform: scale(1, 1); -webkit-transform: scale(1, 1); transform: scale(1, 1) } .indptwo .wrap{ width: 960px; margin-left: auto; margin-right: auto; position: relative; } .indptwo .pr { position: relative; } .indptwo .fl { float: left; } .indptwo .fr{ float: right; } .indptwo { height:544px; background: #efefef; overflow: hidden; } .indptwo .wrap{height:522px; } .indptwo .iphone { width: 692px; height: 495px; position: absolute; left: -161px; z-index: 6; top: 81px;} .indptwo .iphone img{ width: 100%;} .indptwo .pics { margin-left: 38px; height: 100%; } .indptwo .words { width: 341px; padding-top: 85px; }   .indptwo .dwbtn { width: 190px; } .indptwo .dwpic i { display: block; color: #858072; font-size: 16px; padding-bottom: 12px; } .indptwo .dwpic { padding-left: 40px; } .indptwo .downcnt { padding-top: 70px; } .indptwo .dwbtn a { display: block; height: 51px; line-height: 51px; border-radius: 3px; color: #fff; font-size: 16px; padding-left: 60px; margin-bottom: 23px; } .indptwo .shot{width: 392px; height: 351px; position: absolute; top:88px;left: -15px;z-index: 8;} .indptwo .lines{ width: 178px; height: 69px; position: absolute;top: 104px;left: 85px; z-index: 10; transform: rotate(-2deg); -webkit-transform: rotate(-2deg); -moz-transform: rotate(-2deg); -o-transform: rotate(-2deg); -ms-transform: rotate(-2deg); animation: saomiao 2s infinite alternate; -webkit-animation: saomiao 2s infinite alternate;} @keyframes saomiao {from{top: 104px;left: 85px;} to{ top: 253px; left: 140px;}} @-webkit-keyframes saomiao {from{top: 104px;left: 85px;} to{ top: 253px; left: 140px;}} .indptwo img,.indptwo .words span,.indptwo .words p{display: block;} .indptwo .words p{padding-top: 66px;} .indptwo .circular{text-align: center; position: absolute; border-radius: 50%; color: #fff; z-index: 9;-webkit-animation:bounceInDown 1s .2s ease both; -moz-animation:bounceInDown 1s .2s ease both;} .indptwo .lis1{ width: 72px; height: 72px; background:rgba(20,20,20,.9); left: -50px; top:128px; line-height: 26px; font-size: 16px; padding-top: 10px;} .page4 .lis1.wen:before,.page4 .lis1.wen:after{width: 72px;height:72px;} .indptwo .lis2{ width: 68px; height: 68px; background: rgba(4,193,146,.9); left: -50px; top: 336px; line-height: 26px; font-size: 14px; padding-top: 8px;} .page4 .lis2.wen:before,.page4 .lis2.wen:after{width: 68px; height: 68px;} .indptwo .lis3{ width: 40px; height: 40px; background:rgba(27,198,155,.9) ; left: 287px; top: 88px; line-height: 40px; font-size: 13px;} .page4 .lis3.wen:before,.page4 .lis3.wen:after{width: 40px; height: 40px; } .indptwo .lis4{ width: 72px; height: 72px; background: rgba(9,9,9,.9); left: 313px; top: 206px; font-size: 13px; line-height: 22px; padding-top: 12px;} .page4 .lis4.wen:before,.page4 .lis4.wen:after{width: 72px;height:72px;} .indptwo .lis5{ width: 100px; height: 100px; background: rgba(4,193,146,.9); left: 248px; top: 403px; line-height: 36px; font-size: 20px; padding-top: 15px;} .page4 .lis5.wen:before,.page4 .lis5.wen:after{width: 100px; height: 100px;} .indptwo .lis6{ width: 50px; height: 50px; background: rgba(14,14,14,.9); left: 386px; top: 348px; line-height: 20px; font-size: 13px; padding-top: 5px;} .page4 .lis6.wen:before,.page4 .lis6.wen:after{width: 50px; height: 50px; } .indptwo .dwpic img{ display: block;} .indptwo .circular{ box-sizing: border-box; } .page5 { background: url(../img/bg6.jpg) no-repeat center; background-size: cover !important; height: 1115px; } .page5 .wrapper { position: absolute; left: 50%; margin-left: -600px; top: 50%; margin-top: -320px; } .page5 .img-wrap { width: 500px; float: left; display: inline; border-top: #fff solid 2px; position: relative; padding-top:80px; } .page5 .text, .page5 .nav li ,.page5 .tele{ -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s; transition: all 1s; transition-delay: 0.5s; -webkit-transition-delay: 0.5s; opacity: 0; -webkit-opacity: 0; -moz-opacity: 0; } .page5.active .text, .page5.active .nav li { opacity: 1; -webkit-opacity: 1; -moz-opacity: 1; } .page5 .tele { position: absolute; left: 0px; top: 0px; } .page5.active .tele{ left: 20px; top: 360px; opacity: 1; -webkit-opacity: 1; -moz-opacity: 1; } .page5 .tele img { display: block; } .page5 .tele .qq { margin-top: 30px; } .page5 .img-wrap .quan, .page5 .img-wrap .wen { -webkit-transition: all 2s; -moz-transition: all 2s; -o-transition: all 2s; transition: all 2s; opacity: 0.9; -webkit-opacity: 0.9; -moz-opacity: 0.9; } .page5.active .img-wrap .quan, .page5.active .img-wrap .wen { opacity: 1; -webkit-opacity: 1; -moz-opacity: 1; } .page5 .img-wrap .wen { position: absolute; left: 160px; top: 120px; -webkit-transform: translate3d(100px, 0, 0); -ms-transform: translate3d(100px, 0, 0); transform: translate3d(100px, 0, 0); } .page5.active .img-wrap .wen { -webkit-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } .page5 .img-wrap .quan { -webkit-transform: translate3d(-100px, 0, 0); -ms-transform: translate3d(-100px, 0, 0); transform: translate3d(-100px, 0, 0); } .page5.active .img-wrap .quan { -webkit-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } .page5 .text { width: 260px; float: left; display: inline; margin-left: 40px; border-top: #fff solid 1px; padding-top: 40px; position: relative; top: 200px; color:#fff; } .page5.active .text { top: 0; } .page5 .text h2 { font-size: 18px; margin-bottom: 20px; font-weight: bold; } .page5 .text p { margin-bottom: 30px; font-size: 14px; line-height: 26px; } .page5 .nav { width: 360px; margin-left: 40px; float: left; text-align: right; } .page5 .nav li { border-top: #fff solid 1px; padding-top: 40px; padding-bottom: 57px; position: relative; top: -200px; } .page5 .nav li:first-child { transition-delay: 0.7s; -webkit-transition-delay: 0.7s; } .page5 .nav .qr{ width: 140px; height: 128px; background-size: 100% 100%; display:inline-block; background-image: url(../img/erwei.png); } .page5.active .nav li { top: 0; } .page6 { background-size: cover !important; height: 900px; } .page6 video { position: absolute; left: 0; right: 0; top: 0; bottom: 0; min-width: 100%; } .page6 .bg { background: url(../img/img50.png) repeat; position: absolute; left: 0; right: 0; top: 0; bottom: 0; } .page6 .wrapper { position: absolute; left: 50%; margin-left: -600px; top: 50%; margin-top: -205px; } .page6 .text { height: auto; margin-top: 60px; } .page6 .time { width: 340px; float: left; display: inline; color: #fff; font-family: arial; line-height: 1; } .page6 .time .wrap { display: inline-block; text-align: center; } .page6 .time h2 { margin-top: 10px; color: #fff; font-size: 21px; } .page6 .time h4 { margin-top: 10px; } .page6 .info { height: auto; overflow: hidden; width: 1200px; position: absolute; left: 50%; margin-left: -600px; bottom: 35px; color: #c3c5c3; } .page6 .info a { color: #c3c5c3; } .page6 .info ul { width: 340px; float: left; display: inline; font-size: 12px; }</style>
 <div style="height: 100%; position: relative; transform: translate3d(0px, 0px, 0px); transition: all 700ms ease 0s;" class="page-wrap fullpage-wrapper">
 	<div data-anchor="home" style="height: 631px;" class="section page1 fp-section active">
 		<div class="slide-wrap">
@@ -294,12 +299,6 @@ undefined
 		<div class="wrapper">
 			<div class="head">
 				<div class="img"> <img src="/mirror/img/img21.png"> </div>
-				<div class="nav">
-					<ul>
-						<li><a class="jian" href="#"><img src="/mirror/img/img44.png"></a></li>
-						<li><img src="/mirror/img/img23.png"></li>
-					</ul>
-				</div>
 			</div>
 			<div class="body">
 				<ul>
@@ -378,21 +377,16 @@ undefined
 
 		<div class="wrapper">
 			<!--s 广告横幅 aap下载-->
-			<style>
 
-
-			</style>
 			<div class="indptwo">
 				<div class="wrap clearfix">
 					<div class="pics fl pr">
-						<div class="iphone animate dlay200"><img src="/mirror/img/iphoneico.png"></div>
-						<div class="lines wen animate dlay400" ><img src="/mirror/img/line-lj.png"></div>
-						<div class=" lis1 circular wen animate dlay600 turndown" >公关<br>公司</div>
-						<div class=" lis2 circular wen animate dlay800 turndown">摄影<br>工作室</div>
-						<div class=" lis3 circular wen animate dlay1000 turndown" >影楼</div>
-						<div class=" lis4 circular wen animate dlay1200 turndown" >摄影<br>工作室</div>
-						<div class=" lis5 circular wen animate dlay1400 turndown">婚庆<br>公司</div>
-						<div class=" lis6 circular wen animate dlay1600 turndown" >广告<br>传媒</div>
+						<div class="iphone animate dlay200"><img src="/mirror/img/downloadbg.jpg"></div>
+
+						<div class="shot  animate dlay600 turndown  hands" id="hands" >
+							<img src="/mirror/img/downloadshot.png" class="shoudong" data-depth="0.50">
+							<div class="lines " ><img src="/mirror/img/downloadline.png"></div>
+						</div>
 					</div>
 					<div class="words fr">
 						<span class="wow fadeInRight animate dlay400 turnleft" > <span style=" font-size: 33px;color: #666;">颠覆传统影像盈利模式</span></span>
@@ -415,10 +409,9 @@ undefined
 	<div data-anchor="about" style="height: 631px;" class="section page5 noql fp-section">
 		<div class="wrapper">
 			<div class="img-wrap">
-				<div class="img1"> <img src="/mirror/img/img51.png"> </div>
-				<div class="img2"> <img src="/mirror/img/img52.png"> </div>
-				<div class="img3"> <img src="/mirror/img/img53.png"> </div>
-				<!--<div class="img4"> <img src="/mirror/img/img54.png"> </div>-->
+				<img src="/mirror/img/img57.png" class="quan">
+				<div class="wen"> <img src="/mirror/img/img56.png"> </div>
+				<div class="tele"> <img src="/mirror/img/img37.png" class="tel"> <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=9490489&amp;site=qq&amp;menu=yes" target="_blank"><img class="qq" src="/mirror/img/img38.png"></a> </div>
 			</div>
 			<div class="text">
 				<h2>简介</h2>
@@ -435,42 +428,14 @@ undefined
 				<ul>
 					<li><a href="#"><img src="/mirror/img/img34.png"></a></li>
 					<li><a href="#"><img src="/mirror/img/img35.png"></a></li>
+					<li>
+						<div class="qr"> </div>
+					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	<div data-anchor="contact" style="height: 631px;" class="section page6 noql fp-section">
-		<video poster="/mirror/img/bg04.jpg" autoplay loop src=""></video>
-		<!-- <video poster="index/imgs/bg04.jpg" autoplay="autoplay" loop="" src="/mirror/img/bg4.mp4"></video>  -->
-		<div class="bg"> </div>
-		<div class="wrapper">
-			<div class="img"> <img src="/mirror/img/img57.png" class="quan">
-				<div class="wen"> <img src="/mirror/img/img56.png"> </div>
-			</div>
-			<div class="text">
-				<div class="time"> <span class="wrap"> <i><img src="/mirror/img/img39.png"></i>
-          <h2><img src="/mirror/img/img55.png"></h2>
-          <h4>周一至周五</h4>
-          </span> </div>
-				<div class="tele"> <img src="/mirror/img/img37.png" class="tel"> <a href="http://wpa.qq.com/msgrd?v=3&uin=9490489&site=qq&menu=yes" target="_blank"><img class="qq" src="/mirror/img/img38.png"></a> </div>
-			</div>
-		</div>
-		<!--<div class="info">-->
-			<!--<ul id="ul1" style="padding-right:100px">-->
-				<!--<li> 为了能够体验更好的视觉效果，建议截取每个视频片段的第一帧画面作为该视频的识别图 </li>-->
-			<!--</ul>-->
-			<!--<ul id="ul2">-->
-				<!--<li> ©2004-2016 拍多多-->
-					<!--苏ICP12345678<br>-->
-				<!--</li>-->
-			<!--</ul>-->
-			<!--<ul id="ul3">-->
-				<!--<li> QQ：1111111111<br>-->
-					<!--xxxxxxxxxxxxxxx<br>-->
-					<!--111111111@qq.com </li>-->
-			<!--</ul>-->
-		<!--</div>-->
-	</div>
+
 </div>
 
 
@@ -515,7 +480,7 @@ undefined
         $(".nav_main").on("click", "a", function() {
             $(".gh").click();
         });
-        var anchors = [ "home", "services", "cases", "download", "contact", "footer" ];
+        var anchors = [ "home", "services", "cases", "download", "contact" ];
         $(".page-wrap").fullpage({
             anchors: anchors,
             verticalCentered: !1,
@@ -530,9 +495,18 @@ undefined
                     $(".gb-header").removeClass("show");
                     $("#fp-nav").addClass("selected");
                 }
+                if (index == anchors.length) {
+                    $("footer").addClass("pageshow");
+                } else {
+                    $("footer").removeClass("pageshow");
+                }
+                if (anchors[index - 1] == "download" && !$("#hands").data("init")) {
+                    $("#hands").parallax();
+                    $("#hands").data("init", true);
+                }
             },
             onLeave: function(index, nextIndex, direction) {
-                if (index == anchors.length - 1 && direction == "down") {
+                if (index == anchors.length - 1) {
                     $("footer").addClass("pageshow");
                 } else {
                     $("footer").removeClass("pageshow");
@@ -603,19 +577,20 @@ undefined
 
 <footer>
   <div class="links">
-    <a href="http://www.adminbuy.cn/" target="_blank">我的云图</a>
-    <a href="http://www.adminbuy.cn/" target="_blank">个人中心</a>
-    <a href="http://www.adminbuy.cn/" target="_blank">帮助</a>
+    <a class="scene_option" data-type="redirect" data-url="/admin.html#!admin/index.html">我的云图</a>
+    <a  class="scene_option" data-type="redirect" data-url="/admin.html#!admin/account.html">个人中心</a>
   </div>
   <div class="links">
-    <a href="http://www.adminbuy.cn/" target="_blank">关于我们</a>
-    <a href="http://www.adminbuy.cn/" target="_blank">版权声明</a>
-    <a href="http://www.adminbuy.cn/" target="_blank">免责声明</a>
-    <a href="http://www.adminbuy.cn/" target="_blank">用户行为</a>
+    <a href="/index.html#!/web/right.html" target="_blank">版权声明</a>
+    <a href="/index.html#!/web/disclaimer.html" target="_blank">免责声明</a>
   </div>
   <div class="links">
-    <a href="/a/case/">新手指南</a>
-    <a href="/a/join/">每日签到</a>
+    <a href="/index.html#!/web/about.html">新手指南</a>
+    <a href="/index.html#!/web/about.html">帮助</a>
+  </div>
+  <div class="links">
+    <a href="/index.html#!/web/contractus.html" target="_blank">关于我们</a>
+    <a href="/index.html#!/web/behavior.html">用户行为</a>
   </div>
   <div class="qr"> </div>
   <div class="contactc">
@@ -625,7 +600,7 @@ undefined
     </ul>
   </div>
   <div class="clear"></div>
-  <div class="copy">©2004-2016 拍多多 版权所有.<a href="http://www.miitbeian.gov.cn" target="_blank">苏ICP12345678</a></div>
+  <div class="copy" ><a>©2004-2016 拍多多 版权所有.</a><a href="http://www.miitbeian.gov.cn" target="_blank">苏ICP12345678</a></div>
 </footer>
 
 
