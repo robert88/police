@@ -24,13 +24,33 @@
       <file leaf-file-name="admin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="32" />
+            <state relative-caret-position="133">
+              <caret line="194" column="60" selection-start-line="194" selection-start-column="60" selection-end-line="194" selection-end-column="60" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#form#0;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#form#1;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#form#2;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminStatic.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/adminStatic.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="172" column="60" selection-start-line="172" selection-start-column="60" selection-end-line="172" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="join.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/join.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-45">
+              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -39,24 +59,11 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="164" column="23" selection-start-line="164" selection-start-column="23" selection-end-line="164" selection-end-column="23" />
+              <caret line="186" column="60" selection-start-line="186" selection-start-column="60" selection-end-line="186" selection-end-column="60" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#form#0;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#form#1;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#form#2;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nodeTool/bulid/web/list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="29" column="91" selection-start-line="29" selection-start-column="86" selection-end-line="29" selection-end-column="91" />
-              <folding>
-                <marker date="1503246598327" expanded="true" signature="29:31" placeholder="..." />
-                <marker date="1503246598327" expanded="true" signature="13267:13275" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -73,40 +80,10 @@
         </entry>
       </file>
       <file leaf-file-name="add_arproject.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nodeTool/bulid/test/arproject/add_arproject.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_arproject.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/arproject/add_arproject.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="account.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/account.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="8" selection-end-column="118" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2249">
-              <caret line="158" column="30" selection-start-line="158" selection-start-column="30" selection-end-line="158" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -117,6 +94,26 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="8" selection-end-column="125" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexStatic.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/indexStatic.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="164" column="60" selection-start-line="164" selection-start-column="60" selection-end-line="164" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="account.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nodeTool/bulid/admin/account.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="553">
+              <caret line="81" column="26" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -160,9 +157,6 @@
       <list>
         <option value="$PROJECT_DIR$/resource/css/leftnav.css" />
         <option value="$PROJECT_DIR$/admin/user.css" />
-        <option value="$PROJECT_DIR$/adminStatic.html" />
-        <option value="$PROJECT_DIR$/indexStatic.html" />
-        <option value="$PROJECT_DIR$/nodeTool/bulid/admin/account.html" />
         <option value="$PROJECT_DIR$/nodeTool/bulid/admin/createUpload.html" />
         <option value="$PROJECT_DIR$/nodeTool/bulid/admin/index.html" />
         <option value="$PROJECT_DIR$/nodeTool/bulid/admin/order.html" />
@@ -200,8 +194,6 @@
         <option value="$PROJECT_DIR$/web/about.html" />
         <option value="$PROJECT_DIR$/web/behavior.html" />
         <option value="$PROJECT_DIR$/mirror/css/help.css" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/admin.html" />
         <option value="$PROJECT_DIR$/admin/account.html" />
         <option value="$PROJECT_DIR$/admin/order.html" />
         <option value="$PROJECT_DIR$/admin/user.html" />
@@ -209,6 +201,11 @@
         <option value="$PROJECT_DIR$/nodeTool/bulid/test/arproject/add_arproject.json" />
         <option value="$PROJECT_DIR$/test/arproject/add_arproject.json" />
         <option value="$PROJECT_DIR$/nodeTool/bulid/web/list.html" />
+        <option value="$PROJECT_DIR$/admin.html" />
+        <option value="$PROJECT_DIR$/adminStatic.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/indexStatic.html" />
+        <option value="$PROJECT_DIR$/nodeTool/bulid/admin/account.html" />
       </list>
     </option>
   </component>
@@ -421,10 +418,6 @@
               <option name="myItemId" value="bulid" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -444,29 +437,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nodeTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bulid" />
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -991,12 +962,12 @@
       <workItem from="1502112390029" duration="13883000" />
       <workItem from="1502458169027" duration="19916000" />
       <workItem from="1503153184955" duration="132000" />
-      <workItem from="1503194968828" duration="34463000" />
+      <workItem from="1503194968828" duration="35304000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113631000" />
+    <option name="totallyTimeSpent" value="114472000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1932" height="1038" extended-state="0" />
@@ -1015,7 +986,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18064517" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4737443" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4737443" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1087,32 +1058,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/indexStatic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3200">
-          <caret line="160" column="60" selection-start-line="160" selection-start-column="60" selection-end-line="160" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mirror/css/responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mirror/common/page.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -1371,14 +1316,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/join.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/privacy.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -1437,18 +1374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#1;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#2;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/account.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1481,18 +1406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="164" column="23" selection-start-line="164" selection-start-column="23" selection-end-line="164" selection-end-column="23" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#1;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#2;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/picDetail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1521,10 +1434,63 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="29" column="91" selection-start-line="29" selection-start-column="86" selection-end-line="29" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/join.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="194" column="60" selection-start-line="194" selection-start-column="60" selection-end-line="194" selection-end-column="60" />
           <folding>
-            <marker date="1503246598327" expanded="true" signature="29:31" placeholder="..." />
-            <marker date="1503246598327" expanded="true" signature="13267:13275" placeholder="..." />
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#1;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#2;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminStatic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="172" column="60" selection-start-line="172" selection-start-column="60" selection-end-line="172" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="186" column="60" selection-start-line="186" selection-start-column="60" selection-end-line="186" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#1;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#2;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/indexStatic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="164" column="60" selection-start-line="164" selection-start-column="60" selection-end-line="164" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeTool/bulid/admin/account.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="81" column="26" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
