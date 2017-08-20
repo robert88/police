@@ -1,0 +1,38 @@
+.mainbody{  min-height: 312px; }
+/*.takmains *{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}*/
+.ctkmain4 .zfstyle{ padding:22px 40px;}
+.ctkmain4  .zfstyle li{ width:116px; height:45px; border:1px solid #e3e3e3; cursor:pointer; position:relative; float:left; margin-right:12px; border-radius:2px; overflow:hidden}
+.ctkmain4  .zfstyle li.on{ border:1px solid #6bc85c}
+.ctkmain4  .zfstyle li .icon{ display:block; position:absolute; bottom:0; right:0;}
+.ctkmain4  .zfstyle li img{ display:block;}
+.ctkmain4  p{padding:0 40px 22px;}
+.ctkmain4  .paybtn{padding:22px 40px;text-align: center; }
+.ctkmain4  .paybtn a{height:22px;line-height: 22px;padding: 5px 10px;font-size:14px;margin:0 15px;background-color: #6bc85c;color: #fff}
+.myorder .searchbar{padding-top: 30px;}
+.myorder .searchbar .times{float: left; width: 209px;height: 33px;margin:0 25px 0 5px;text-indent: 10px;border-radius:3px;cursor:pointer;}
+.myorder .searchbar span{line-height:33px;padding-right:10px;}
+.myorder .searchbar .select{float: left;width: 152px;height:33px;}
+.myorder .searchbar .select input{height:33px}
+.myorder .searchbar .layui-form-select dl dd.layui-this {background: #e3f6f3;color: #4d4f4f;}
+.myorder .searchbar .submits {float: left;padding-left: 20px;}
+
+.myorder .searchbar .submits .webtn {border: none;background: #02bebc;background: -moz-linear-gradient(left, #009fe8 0%, #1baaeb 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#009fe8), color-stop(100%,#1baaeb));background: -webkit-linear-gradient(left, #009fe8 0%,#1baaeb 100%);background: -o-linear-gradient(left, #009fe8 0%,#1baaeb 100%);background: -ms-linear-gradient(left, #009fe8 0%,#1baaeb 100%);background: linear-gradient(to right, #009fe8 0%,#1baaeb 100%);    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009fe8', endColorstr='#1baaeb',GradientType=0 ); cursor: pointer;width: 72px;height: 33px;line-height: 33px;border-radius: 5px;color: #fff;}
+.myorder .searchbar .typeselect{ float: left;margin-left: 5px; }
+.myorder .searchbar .typeselect i{display: block; width: 209px;line-height: 30px;border-radius:3px;border: 1px solid #e1e1e1;text-indent: 10px;}
+.myorder .searchbar .typeselect em{float: right;width: 7px;height: 7px;border-top: 2px solid #999;border-right: 2px solid #999;}
+.myorder .searchbar .typeselect em.close{ -webkit-transform: rotate(135deg);-o-transform: rotate(135deg);transform: rotate(135deg);margin:9px 13px 0 0;webkit-transition:all 300ms ease-out; -mozilla-transition:all 300ms ease-out; -ms-transition:all 300ms ease-out; -o-transition:all 300ms ease-out; transition:all 300ms ease-out; }
+.myorder .searchbar .typeselect em.open{-webkit-transform: rotate(-45deg);-o-transform: rotate(-45deg);transform: rotate(-45deg);margin:13px 13px 0 0;webkit-transition:all 300ms ease-out; -mozilla-transition:all 300ms ease-out; -ms-transition:all 300ms ease-out; -o-transition:all 300ms ease-out; transition:all 300ms ease-out; }
+.myorder .searchbar .typeselect ul{ display: none;position: absolute;z-index: 10; border-radius:3px;border: 1px solid #e1e1e1;border-top: 0;background: #fff;}
+.myorder .searchbar .typeselect li{width: 209px;line-height: 45px;text-indent: 10px;}
+.myorder .searchbar .typeselect li:hover{background: #edf8fd;}
+.myorder .searchbar>a{float: left;width: 150px;line-height: 32px;text-align: center;background: #1abd9b;color: #fff;margin-left: 30px;border-radius: 3px;}
+.myorder .ordercont{padding-top: 30px;}
+.myorder .ordercont table{width: 877px;margin: 0 6px;border: 1px solid #d1d1d1;border-radius:3px;border-collapse: separate;overflow: hidden;}
+.myorder .ordercont th{background: #f3f3f3;line-height: 48px;    border-bottom: 1px solid #d1d1d1;  border-right: 1px solid #d1d1d1;  text-align: center;}
+.myorder .ordercont td{border-bottom: 1px solid #d1d1d1;border-right: 1px solid #d1d1d1;text-align: center;line-height: 48px;}
+.myorder .ordercont td a{margin: 0 8px;}
+.myorder .ordercont td:last-child{border-right: 0;width: 115px;}
+.myorder .ordercont table .tabcont{width: 180px;}
+.myorder .ordercont tr:last-child td{border-bottom: 0;}
+.deltxt{color: #f00;}
+.paytxt{color: #1abd9b;}

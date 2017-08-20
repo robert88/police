@@ -1,0 +1,29 @@
+<div class="mainbody">
+	<div class="mainwrap wrap">
+		<div class="maincont pr">
+			<div class="mainmenu pa">
+				<ul>
+					<li class="menuitem1"><a href="#!/admin/index"><em></em><span>云图管理</span></a></li>
+					<li class="menuitem2 active"><a href="#!/admin/user"><em></em><span>个人资料</span></a></li>
+					<li class="menuitem3"><a href="#!/admin/account"><em></em><span>我的账户</span></a></li>
+					<li class="menuitem4"><a href="#!/admin/order"><em></em><span>我的订单</span></a></li>
+				</ul>
+			</div>
+			<div class="userinfo contwrap clearfix">
+				<div class="conttitle">
+					<h1>个人资料</h1>
+				</div>
+				<div class="contdetail">
+					<ul>
+						<form action="/index/user/save_info.html" method="post" class="registerform">
+							<li><label>用户名</label><input type="text" name="username" value="" placeholder="用户名为4-20位字符" datatype="s4-20" ajaxurl="/index/login/check_input/reg/1.html" nullmsg="用户名不能为空" errormsg="用户名为4-20位字符" maxlength=20><div class="Validform_checktip"></div></li>
+							<li><label>电子邮箱</label><input type="text" name="email" value="" placeholder="电子邮箱" datatype="e" nullmsg="邮箱不能为空" errormsg="邮箱格式不正确" maxlength=50><div class="Validform_checktip"></div></li>
+							<li><label>&nbsp;</label><input type="submit" class="btns" value="保存"></li>
+						</form>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>

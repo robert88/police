@@ -4,3 +4,4 @@ require("web/dateRange.js");
 layui.use('laydate', function(){
 	var laydate = layui.laydate
 });
+  $(".js-example-basic-single").select2();

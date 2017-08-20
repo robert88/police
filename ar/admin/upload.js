@@ -1,0 +1,1 @@
+$( "#sortable" ).sortable();$( "#sortable" ).disableSelection();$(".nullcnt").height($(window).height()*0.3);window.onresize=function(){	$(".nullcnt").height($(window).height()*0.3);}var arproject_status = 1;layui.config({	base: '/resource/js/'}).use('user');

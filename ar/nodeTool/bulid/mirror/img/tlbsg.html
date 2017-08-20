@@ -1,0 +1,613 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+		<title>逃离北上广 _天长地久婚纱摄影</title>
+		<script src="http://apps.bdimg.com/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="layer/layer.js" type="text/javascript" charset="utf-8"></script>
+        
+                <!-- Add fancyBox main JS and CSS files -->
+        <script type="text/javascript" src="images/source/jquery.fancybox.js"></script>
+        <link rel="stylesheet" type="text/css" href="images/source/jquery.fancybox.css" media="screen" />
+        <!-- Add Thumbnail helper (this is optional) -->
+        <link rel="stylesheet" type="text/css" href="images/source/helpers/jquery.fancybox-thumbs.css" />
+        <script type="text/javascript" src="images/source/helpers/jquery.fancybox-thumbs.js"></script>
+        
+        <!--弹出框-->
+<script src="layer/layer.js"></script>
+
+        <script type="text/javascript">
+                /*$(document).ready(function() {
+                    *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked*/
+        
+                    /*$('.fancybox-thumbs').fancybox({
+                        prevEffect : 'elastic',
+                        nextEffect : 'elastic',
+        
+                        closeBtn  : true,
+                        arrows    : true,
+                        nextClick : true,
+                        autoPlay : true,
+                        playSpeed : 5000,
+                        preload : 20,
+                        helpers : {
+                            thumbs : {
+                                width  : 80,
+                                height : 80
+                            }
+                        }
+                    });
+        
+                });*/
+        </script>
+          <!--<script type="text/javascript" src="js/zepto.min.js"></script>-->
+        
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/atom.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/open.css">
+
+
+		<style>
+			body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0;}
+fieldset,img,abbr,acronym{border:0;}
+table{border-collapse:collapse;border-spacing:0;}
+ol,ul{list-style:none;}
+address,caption,cite,code,dfn,em,var{font-weight:normal;font-style:normal;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{/*font-weight:normal;*/font-size:100%;}
+q:before,q:after{content:'';}
+a{color:#5e6164;text-decoration:none}
+a:hover{color:#664b3f;text-decoration:none}
+.wp img,#WzTtDiV img{/*background:#fcfcfc url(../images/load.gif) no-repeat center center*/}
+.c,.clean{clear:both;height:0;font-size:1px;line-height:0}
+.outline{blr:expression(this.onFocus=this.blur());outline:none}
+.none{display:none}
+i{font-style: normal;}
+u { text-transform:none;}
+input,textarea{outline:none}
+.cc{clear: both;}
+/*html5*/
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{margin:0; padding:0;display:block}
+.con{
+	width: 1280px;margin: 0 auto;
+}
+.tabBg{
+background: url(images/tab-bg.png) no-repeat;width: 1320px;height:360px;margin: 0 auto;margin-top: -90px;
+}
+html {
+	font-family:微软雅黑;
+}
+a {
+	text-decoration:none
+}
+a:hover {
+}
+body {
+	font-size:12px;
+	overflow-x:hidden;
+	margin:0;
+	_padding-top: 40px;
+}
+.top {
+	background-color: #f4f0f0;
+	border-bottom: 1px solid #ccc;
+	height: 40px;
+	overflow: hidden;
+}
+.t-logo {
+	float: left;
+}
+.topnav {
+	float: right;
+}
+.topnav a {
+	color: #999;
+	display: block;
+	font-size: 16px;
+	line-height: 40px;
+}
+.topnav a:hover {
+	color: #f00;
+}
+.topnav li {
+	color: #999;
+	float: left;
+	margin-left: 50px;
+}
+.tab{
+	font-family: "微软雅黑";
+	height: 70px;
+	/*margin-top: -70px;*/
+	padding-top: 20px;
+	position: relative;
+	z-index: 500;
+}
+.tabTit{
+	float: left;
+}
+.tabTit .titIn{
+	font-size: 12px;
+	 text-transform:Uppercase;
+	 color: #6e6d6d;
+	 display: block;
+	 margin-top: 10px;
+}
+.tabTit .titTitle{
+	line-height: 70px;
+	font-size: 27px;
+	color: #c00202;
+	text-indent: 30px;
+}
+.tagitem{
+	float: right;
+	font-size: 24px;
+}
+.tagitem div{float:left;cursor: pointer;color: #fff;width:210px;height: 70px;text-align:center;line-height: 70px;}
+.tagitem .on{background: #fff;color: #000;border-top:5px solid #fcff00;height: 70px;margin-top: -5px;}
+.tagitem div span{display: block;}
+.tagitem div .onbg{
+	display: block;height: 70px;background: #6e6f6c;filter:alpha(opacity=70);
+	-moz-opacity:0.7;
+	opacity:0.7;
+	position: relative;
+	z-index: 501;
+}
+.tagitem .on span{
+	background: #fff;
+}
+.tagitem .on .item{
+	color: #000;
+}
+.tagitem div .item{
+	color: #fff;
+	margin-top: -70px;
+	position: relative;
+	z-index: 502;
+}
+.imagsTit{font-size: 22px;font-family: "黑体";margin-bottom: 15px;}
+.imagesUl{font-family: "微软雅黑";}
+.imagesUl > li{float: left;width: 600px;overflow: hidden; margin-right: 20px;margin-bottom: 25px;}
+.imagesUl .imageTitle{
+	height: 30px;
+	font-size: 18px;
+	color: #000;
+	line-height: 30px;
+}
+.imagesUl .imageTitle .tit{
+	font-family:"宋体";
+	color: #868585;
+}
+.imagesUl .imageTitle .title{
+	color: #000;
+}
+.imagesUl .imageHref{
+	display: block;
+	width: 600px;
+	overflow: hidden;
+}
+.imagesUl .imageHref img{
+	position: relative;
+	z-index: 499;
+}
+.imagesUl .imageHref .imageBor{
+	position: relative;
+	z-index: 500;
+	height: 255px;
+	margin: 5px;
+	border: 8px solid rgba(255,255,255,0.8);
+	margin-top: -280px;
+}
+.info{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #6e6d6d;
+	padding: 25px 50px;
+	line-height: 1.8em;
+}
+.info b{
+	color: #000;
+}
+.imagesCon{
+	margin-top: -120px;
+	padding-left: 60px;
+}
+.imageInfo{
+	border: 1px solid #e2e1db;
+	padding: 10px;
+	margin: 0 18px;
+}
+.imageInfo .imageimg{
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.imageInfo .imageimg img{
+	padding: 0;
+	margin: 0;
+}
+.box{
+	margin-bottom: 50px;
+}
+.head img,.box02 img,.foot img,.foot_com img{
+	display: block;
+}
+
+
+.colock-wrap{ margin:20px 0 0 733px; font-size:24px; color:#0077bb;}
+
+/* -----轮播----  */
+.Top_Record{}
+
+.record_Top{width:90%; height:50px; background:url(../images/record_Bg.png) center center no-repeat; background-size:contain; text-align:center; line-height:50px; margin:30px auto 0px; color:#fff;}
+
+
+.topRec_List dl,.maquee{ width:90%; overflow:hidden; margin:0 auto; color:#7C7C7C}
+.topRec_List dd{ float:left; text-align:center; border-bottom:1px solid #1B96EE; color:#1B96EE;}
+.topRec_List dl dd:nth-child(1){ width:17%; height:40px; line-height:40px; }
+.topRec_List dl dd:nth-child(2){ width:18%; height:40px; line-height:40px; }
+.topRec_List dl dd:nth-child(3){ width:25%; height:40px; line-height:40px; }
+.topRec_List dl dd:nth-child(4){ width:40%; height:40px; line-height:40px; }
+.maquee{ height:195px;}
+.topRec_List ul{ width:100%; height:195px;}
+.topRec_List li{ width:100%; height:38px; line-height:38px; text-align:center; font-size:12px; border-bottom: 1px dashed #aaa;}
+/*.topRec_List li:nth-child(2n){ background:#077cd0}*/
+.topRec_List li div{ float:left;}
+.topRec_List li div:nth-child(1){ width:17%;}
+.topRec_List li div:nth-child(2){ width:18%;}
+.topRec_List li div:nth-child(3){ width:25%;}
+.topRec_List li div:nth-child(4){ width:40%;}
+
+.apple{ text-align:center; padding-right:10px;}
+.apple a{display:block; text-decoration:none; font-size:14px;}
+.apple-a{ display:block; width:330px; height:65px; margin:-671px 0 0 796px;}
+.apple,.aa{ width:22%; height:26px; overflow:hidden; margin:710px auto; }
+.apple a,.aa a{ width:100%; height:26px; line-height:26px; text-indent:20px; color:#fcdbff;}
+.aa {word-wrap:break-word;line-height:26px;  color:#fcdbff;}
+.apple li a b{ color:#fff248;}
+/* -----轮播----  */
+
+.ctn_wrap{ width:1340px; margin:auto;}
+.ctn_wrap a{ display:block; width:335px; height:500px; float:left; margin-top:500px;}
+
+.ctn{ text-align:center;}
+.mybtn{ border:1px solid #ccc; background-color:#ccc; padding:5px; margin:10px 0;}
+.myalert{ text-align:center; padding:20px;}
+.myalert input{ margin-bottom:10px;}
+.myipt{border:1px solid #ccc;line-height: 35px; font-size:14px; width:96%; padding:0 2%; font-size:14px;}
+.mybtn{ background: #ff3b7d none repeat scroll 0 0;
+    border-radius: 6px;
+	border:1px solid #ff3b7d;
+	margin:20px auto;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    _text-shadow: 1px 1px 1px #fff;
+    width: 80px;}
+.wrap-ctn p{ text-align:center; color:#fff; font-size:14px;}
+.wrap-ctn .p1{ font-size:20px;}
+
+.open-has .mod-chest-cont .gift .icon {width: 258px;}
+.input-wrap input{ margin-bottom:10px;}
+.wrap-rule{ padding:15px; color:#ffa200; color:#ffa200;}
+.wrap-rule dl{}
+.wrap-rule dl dd{  color:#ffa200; margin-bottom:5px;}
+.wrap-rule dl dt{ font-weight:bold; font-size:16px; margin-bottom:5px;}
+
+
+		</style>
+	</head>
+	<body class="open-body" style="position: absolute;left: 50%;margin-left: -960px;width: 1920px;">
+	<div class="top" style="width:100%; _position:fixed;_top: 0px;_margin-top: -30px;_opacity:0.8; _display:none">
+		<div style=" width:1280px; margin:0 auto; display:block; ">
+			<div class="t-logo"><a href="/"><img src="http://www.szforever.com.cn/templets/images/top-logo.jpg"  /></a></div>
+			<div class="topnav">
+				<ul>
+                <li><a target="_blank" href="http://www.szforever.com.cn">返回首页</a></li>
+                <li><a target="_blank" href="http://www.szforever.com.cn/gallery/six">主题风格</a></li>
+                <li><a target="_blank" href="http://www.szforever.com.cn/gallery/customer/">客照欣赏</a></li>
+                <li><a target="_blank" href="http://www.szforever.com.cn/psjd/">拍摄基地</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+		<section class="head">
+            <img src="images/20170709tlbsg_n_01.jpg"/>
+             <img src="images/20170709tlbsg_n_02.jpg"/>
+                       <!----倒计时--->
+            	 <div class="colock-wrap">
+                    <p class="colockbox" id="colockbox1"> 
+                    距活动结束还剩：
+                    <span class="day">00</span>天
+                    <span class="hour">00</span> 时
+                    <span class="minute">00</span> 分
+                    <span class="second">00</span> 秒
+                </p>
+                </div>
+                <!----倒计时end--->
+              <p style="text-align:center; padding:20px 0; font-size:16px;">现已订套系：<b style="color:#e53645; font-size:30px;">72</b>套</p>
+            <img src="images/20170709tlbsg_02_02.jpg"/>
+            <img src="images/20170709tlbsg_03.jpg"/>
+            <img src="images/20170709tlbsg_04.jpg"/>
+            <img src="images/20170709tlbsg_05.jpg" border="0" usemap="#Map"/>
+            <map name="Map">
+              <area shape="rect" coords="756,203,1171,301" onClick="myalert()" href="###">
+            </map>
+            <img src="images/20170709tlbsg_06.jpg"/>
+            <img src="images/20170709tlbsg_07.jpg" border="0" usemap="#Map2"/>
+            <map name="Map2">
+              <area shape="rect" coords="755,469,1170,576" href="http://pvt.zoosnet.net/LR/Chatpre.aspx?id=PVT57935468&lng=cn" target="_blank">
+            </map>
+            <img src="images/20170709tlbsg_08.jpg"/>
+            <img src="images/20170709tlbsg_09.jpg"/>
+            <img src="images/20170709tlbsg_10.jpg"/>
+            <img src="images/20170709tlbsg_11.jpg"/>
+            <img src="images/20170709tlbsg_12.jpg"/>
+            <img src="images/20170709tlbsg_13.jpg"/>
+            <img src="images/20170709tlbsg_14.jpg"/>
+            <img src="images/20170709tlbsg_15.jpg"/>
+            <img src="images/20170709tlbsg_16.jpg"/>
+            <img src="images/20170709tlbsg_17.jpg"/>
+            <img src="images/20170709tlbsg_18.jpg"/>
+            <img src="images/20170709tlbsg_19.jpg"/>
+            <img src="images/20170709tlbsg_20.jpg" border="0" usemap="#Map4"/>
+            <map name="Map4">
+              <area shape="rect" coords="753,259,1169,357" href="http://pvt.zoosnet.net/LR/Chatpre.aspx?id=PVT57935468&lng=cn" target="_blank">
+            </map>
+            <img src="images/20170709tlbsg_21.jpg"/>
+            <img src="images/20170709tlbsg_22.jpg"/>
+            <img src="images/20170709tlbsg_23.jpg"/>
+            <img src="images/20170709tlbsg_24.jpg"/>
+            <img src="images/20170709tlbsg_25.jpg"/>
+            <img src="images/20170709tlbsg_26.jpg"/>
+            <img src="images/20170709tlbsg_27.jpg"/>
+            <img src="images/20170709tlbsg_28.jpg" border="0" usemap="#Map5"/>
+            <map name="Map5">
+              <area shape="rect" coords="759,617,1166,719" href="##" onClick="myalert()">
+            </map>
+            <img src="images/20170709tlbsg_29.jpg"/>
+            <img src="images/20170709tlbsg_30.jpg"/>
+        </section>
+		<section class="box02">
+
+<!--<div style="width:1000px;  margin:30px auto 0 auto; text-align:center;"><a href="http://pl.szforever.com.cn/" target="_blank"><img src="images/kb.jpg"></a></div>-->
+            <p style="color:#ccc; line-height:50px; margin-top:50px; text-align:center;">本次活动由深圳市天长地久文化产业股份有限公司负责解释并保留变更的权利</p>
+    </section>
+    
+</body>
+
+
+	<noscript>
+<img src="http://t1.sagetrc.com/trc/atac/conv.gif?id=29772" width="0px" style="display:none !important;"/>
+</noscript>
+<script type="text/javascript">
+$(function(){
+	countDown("2017/7/31 23:59:59","#colockbox1");
+});
+
+function countDown(time,id){
+	var day_elem = $(id).find('.day');
+	var hour_elem = $(id).find('.hour');
+	var minute_elem = $(id).find('.minute'); 
+	var second_elem = $(id).find('.second');
+	var end_time = new Date(time).getTime(),//月份是实际月份-1
+	sys_second = (end_time-new Date().getTime())/1000;
+	var timer = setInterval(function(){
+		if (sys_second > 1) {
+			sys_second -= 1;
+			var day = Math.floor((sys_second / 3600) / 24);
+			var hour = Math.floor((sys_second / 3600) % 24);
+			var minute = Math.floor((sys_second / 60) % 60);
+			var second = Math.floor(sys_second % 60);
+			day_elem && $(day_elem).text(day);//计算天
+			$(hour_elem).text(hour<10?"0"+hour:hour);//计算小时
+			$(minute_elem).text(minute<10?"0"+minute:minute);//计算分钟
+			$(second_elem).text(second<10?"0"+second:second);//计算秒杀
+		} else { 
+			//myprize();
+			clearInterval(timer);
+		}
+	}, 1000);
+}
+
+</script>
+
+<script type="text/javascript"> 
+var arr_myaward = new Array();
+arr_myaward[1] = "深圳婚纱套系专享大礼包";
+arr_myaward[2] = "深圳婚纱套系专享大礼包";
+arr_myaward[3] = "深圳婚纱套系专享大礼包";
+function autoScroll(obj){  
+	$(obj).find("ul").animate({  
+		marginTop : "-26px"  
+	},500,function(){  
+		$(this).css({marginTop : "0px"}).find("li:first").appendTo(this);  
+	})  
+}  
+
+function rnd(n, m){
+	var random = Math.floor(Math.random()*(m-n+1)+n);
+	return random;
+	
+}
+$(function(){  
+	//setInterval('autoScroll(".maquee")',3000);
+	setInterval('autoScroll(".apple")',3000);
+
+	  
+}) 
+
+function chestClose(th)
+{
+	var item2 = rnd(1,3);
+	var award = arr_myaward[item2];
+    $(th).addClass("shake");
+    var that=th;
+    th.addEventListener("webkitAnimationEnd", function(){
+      $(that).closest(".open-has").addClass("opened");
+      setTimeout(function(){
+        $(that).removeClass("show");
+        $(that).closest(".mod-chest").find(".chest-openp1").addClass("show");
+		$("#awardShow").html(award);
+        setTimeout(function(){
+          $(".chest-open").addClass("blur");
+        },500)
+      },200)
+    }, false);
+}
+
+function myalert(prize)
+{
+	
+	
+	var mycontent='';
+	 mycontent+='<div class="wrapper">';
+    mycontent+='<div class="bg rotate"></div>';
+    mycontent+='<div class="open-has ">';
+	mycontent+='<h3 class="title-close"><span class="user">深圳天长地久</span>给你发了一个宝箱</h3>';
+	mycontent+='<h3 class="title-open">恭喜你，</br>成功打开<span class="user">深圳天长地久</span>发的宝箱</h3>';
+	mycontent+='<div class="mod-chest">';
+	mycontent+='<div onClick="chestClose(this);" class="chest-close show ">';
+	mycontent+='<div class="gift"></div>';
+	mycontent+='<div class="tips">';
+	mycontent+='<i class="arrow"></i>';
+	mycontent+='</div>';
+	mycontent+='</div>';
+	mycontent+='<div class="chest-open chest-openp1">';
+	mycontent+='<div class="mod-chest-cont open-cont">';
+	mycontent+='<div class="content">';
+	mycontent+='<div class="gift">';
+	mycontent+='<div id="awardShow" class="icon"><img src="img/chest-icon-zuan.png"></div>';
+	mycontent+='</div>';
+	mycontent+='<div class="input-wrap">';
+	mycontent+='<input id="name" placeholder="请输入你的姓名" type="text"/>';
+	mycontent+='<input id="phone" placeholder="请输入你的手机号" type="text"/>';
+	mycontent+='</div>';
+	mycontent+='<div class="func">';
+	mycontent+='<button class="chest-btn" onclick="add()">领取奖品</button>';
+	mycontent+='</div>';
+	mycontent+='</div>';
+	mycontent+='</div>';
+	mycontent+='</div>';
+    mycontent+='</div>';
+    mycontent+='</div>';
+    mycontent+='</div>';
+  mycontent+='<div class="wrap-rule">';
+  mycontent+='<dl>';
+	
+	  mycontent+='<dt>奖品说明：</dt>';
+	  mycontent+='<dd>1、奖品需要搭配婚纱照套系使用，不兑换等值现金，不能与门店优惠活动叠加使用。</dd>';
+	  mycontent+='<dd>2、奖品仅限新定婚纱照使用，每人只能领取一次。</dd>';
+	  mycontent+='<dd>我司对本次活动保留最终解释权，如有任何疑问敬请咨询客服热线：0755-82432009，客服微信：tcdjer</dd>';
+  mycontent+='</dl>';
+mycontent+='</div>';
+
+
+		
+	layer.open({
+	  type: 1,
+	  shade :0.7,
+	  title: '宝箱',
+	  shadeClose: true,//点击背景关闭
+	  //skin: 'layui-layer-nobg', //没有背景色
+	  //skin: 'layui-layer-rim', //加上边框
+	  area: ['1000px', ''], //宽高
+	  content: mycontent,
+	  cancel: function(index){
+		/* if(!confirm("如未填写信息则视为放弃奖品哦（已填写可直接关闭）"))
+		{
+			return false;	
+		}*/
+		layer.close(index);
+		//list();
+  		 }
+	});	
+	
+}
+
+function add()
+{
+	var prize=$("#awardShow").html();
+	if( $("#name").val() == '')
+	{
+		alert("姓名不能为空！");
+		return false;
+	}
+	
+	
+	if( $("#phone").val() == '')
+	{
+		alert("手机号不能为空！");
+		return false;
+	}
+	
+	if($("#phone").val()) //有香港号码
+	{
+		var reg =  /1[0-9]{10}/;
+		if(!reg.test($("#phone").val()))
+		{
+			alert('手机号格式错误');
+			return false;
+		}
+	}
+	$.ajax({
+		type: 'post',
+		url:'/plus/savedc.php',
+		dataType:'json',
+		data:{
+			'name':$("#name").val()
+			,'phone':$("#phone").val()
+			,'prize':prize
+			,'style':'pc'
+		},
+		success: function(data)
+		{	
+			if(data==1)
+			{
+				alert('提交成功');	
+				$("#name").val('');
+				$("#phone").val('');
+				layer.closeAll();
+				//myalert2(award);
+				
+			}
+			else
+			{
+				alert('你已经提交过了哦');	
+				layer.closeAll();
+				//myalert2(award);
+			}
+			//alert(data['message']);
+			
+		}
+	});	
+}
+
+
+		
+</script> 
+
+
+
+<script type="text/javascript">
+var pubsage_sign="";var pubsage_url="";var url=window.location.href;var domain=document.domain;var mat=url.match(/adtiid=([^&#]*)/);var iid=mat?mat[1]:"";if(iid==""||typeof(iid)=="undefined"){var uid=function(cookiekey){var strCookie=document.cookie;var arrCookie=strCookie.split(";");var value="";for(var i=0;i<arrCookie.length;i++){var arr=arrCookie[i].split("=");if(cookiekey==arr[0].replace(/(^\s*)|(\s*$)/g,"")){value=arr[1];break}}return value}("_ws_uid");if(uid==""||typeof(uid)=="undefined"){pubsage_url="tca.sagetrc.com"}else{var strAry=domain.split(".");var host=strAry[strAry.length-2]+"."+strAry[strAry.length-1];var pf=uid.split(".");if(pf[0]=="tqh"){pubsage_url="tqh_"+pubsage_sign+"."+host}if(pf[0]=="tgg"){pubsage_url="tgg_"+pubsage_sign+"."+host}if(pf[0]=="tsg"){pubsage_url="tsg_"+pubsage_sign+"."+host}if(pf[0]=="tdsp"){pubsage_url="tdsp_"+pubsage_sign+"."+host}if(pf[0]!="tsg"&&pf[0]!="tgg"&&pf[0]!="tqh"&&pf[0]!="tdsp"){pubsage_url="trc_"+pubsage_sign+"."+host}}}else{if(iid.match("^g")!=null){pubsage_url="tgg.sagetrc.com"}if(iid.match("^q")!=null){pubsage_url="tqh.sagetrc.com"}if(iid.match("^s")!=null){pubsage_url="tsg.sagetrc.com"}if(iid.match("^d")!=null){pubsage_url="tdsp.sagetrc.com"}if(iid.match("^g|^q|^s|^d")==null){pubsage_url="t1.sagetrc.com"}}var pubsage_conv_id=29772;var pubsage_conv=pubsage_conv||[];(function(){try{var d=document;var at=d.createElement("script");at.type="text/javascript";at.async=true;at.src=("https:"==document.location.protocol?"https:":"http:")+"//"+pubsage_url+"/trc/atac/conv_x.js?id="+pubsage_conv_id;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(at,s)}catch(e){}})();
+</script>
+</body></html>
+<script language="javascript">
+
+	var LiveAutoInvite0='您好，来自%IP%的朋友'; 
+	var LiveAutoInvite1='来自首页自动邀请的对话';
+	var LiveAutoInvite2='</b>';
+        var LR_next_invite_seconds = 10; //10秒后再次显示自动邀请,可自行修改
+
+
+</script>
+<script language="javascript" src="http://pvt.zoosnet.net/JS/LsJS.aspx?siteid=PVT57935468&float=1&lng=cn"></script>
+</html>

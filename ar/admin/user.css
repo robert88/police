@@ -1,0 +1,16 @@
+/*个人中心——个人资料*/
+.userinfo li{padding: 25px 0 0 10px;overflow: hidden;}
+.userinfo label{float: left; width: 90px;}
+.userinfo input{float: left; line-height: 28px;width: 328px;}
+.userinfo input.Validform_error{border-color:#ff7e7e}
+.userinfo .Validform_checktip{float:left;line-height: 28px;width: 328px;padding-left:20px}
+.userinfo .Validform_wrong{color:#ff7e7e}
+.userinfo .Validform_right{height:0px;overflow:hidden;}
+.userinfo .btns{display: inline-block; width: 90px;line-height: 30px;background: #009fe8; color: #fff;text-align: center;border-radius: 3px;border:none;cursor: pointer}
+.userinfo a.txts{display: inline-block;color: #009fe8;}
+.userinfo span{display: none;overflow: hidden;}
+.userinfo span input{float: left; width: 237px;}
+.userinfo span .checkbtn{float: left; width: 91px;line-height: 28px;border: 1px solid #d1d1d1;border-left:0;text-align: center;color: #f00;}
+.userinfo .checktele{display: none;}
+.userinfo .checktip{display: none;}
+.userinfo .checktele i{float: left;color: #f00;}

@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>我的工作台 - 拍多多</title>
+	<meta name="keywords" content="拍多多">
+	<meta name="description" content="拍多多">
+	<link  href="/css/public.css" rel="stylesheet"  type="text/css">
+	<link  href="/css/index.css" rel="stylesheet"  type="text/css">
+	<link rel="stylesheet" href="/css/layui.css" media="all">
+	<style>
+
+		.gb-header, .gb-nav {
+			height: 86px;
+			background: #fff;
+			position: fixed;
+			left: 0;
+			right: 0;
+			z-index: 8;
+			border-bottom:#00a0e9 1px solid ;
+		}
+		.gb-header {
+			top: -86px;
+			/*css3*/
+
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+			-o-transition: all 0.5s;
+			transition: all 0.5s;
+			opacity: 0;
+			-webkit-opacity: 0;
+			-moz-opacity: 0;
+		}
+		.gb-nav.show, .gb-header.show {
+			top: 0;
+			opacity: 1;
+			-webkit-opacity: 1;
+			-moz-opacity: 1;
+		}
+		.header .logo, .gb-nav .logo {
+			margin-left: 60px;
+			float: left;
+			display: inline;
+			/*margin-top: 24px;*/
+		}
+		.header .nav {
+			margin-right: 50px;
+			float: right;
+			display: inline;
+			margin-top: 40px;
+		}
+		.header .nav li {
+			width: 72px;
+			float: left;
+			display: inline;
+			margin-left: 40px;
+			font-size: 14px;
+		}
+		.header .nav li a {
+			display: block;
+			height: 24px;
+			line-height: 24px;
+			overflow: hidden;
+			text-decoration: none;
+		}
+		.header .nav li span {
+			display: block;
+			/*css3*/
+
+			transition: all 0.3s ease-in-out 0s;
+		}
+		.header .nav li span.s2 {
+			color: #E31414;
+			font-weight: bold;
+		}
+		.header .nav li a:hover .s1, .header .nav li.selected a .s1 {
+			margin-top: -24px;
+		}
+		.mr10{
+			margin-right: 10px;
+		}
+		.ml10{
+			margin-left: 10px;
+		}
+		.login{
+			position:absolute;
+			right:10px;
+			top:5px;
+		}
+
+	</style>
+</head>
+
+<body>
+<div class="header gb-header show">
+	<div class="logo"> <a href="/"><img src="/img/logo.png"></a> </div>
+	<div class="nav">
+		<ul>
+			<li><a href="/"><span class="s1">首页</span><span class="s2">Home</span></a></li>
+
+			<li><a href="/a/moban/"><span class="s1">我的云图</span><span class="s2">Picture</span></a></li>
+
+			<li><a href="/a/case/"><span class="s1">个人中心</span><span class="s2">Individual</span></a></li>
+
+			<li><a href="/a/join/"><span class="s1">下载</span><span class="s2">Download</span></a></li>
+
+			<li><a href="/a/news/"><span class="s1">帮助</span><span class="s2">Help</span></a></li>
+
+		</ul>
+		<div class="login"><a class="mr10">爱分享rt</a>/<a class="ml10">退出</a></div>
+	</div>
+</div>
+<form class="layui-form" action="/index/arproject/update.html" method="get">
+<div class="wrap">
+	<div class="center-upload" id="sortable">
+	
+				<div class="nullcnt">
+			<i><img src="/img/nullico.png"></i>
+		</div>
+			<div class="addpart">
+				<a href="javascript:;" class="scene_option" data-type="addrecord" data-id="864">增加</a>
+			</div>
+			</div>
+	
+</div>
+<!------>
+<div class="graybg"></div>
+<div class="takmains">
+		<div class="closed scene_option" data-type="takcancel" data-id="864"><img src="/img/closedico.png"></div>
+		<div class="cont">
+			<span></span>
+		</div>
+		<div class="btns"><span class="scene_option takdeter" data-type="takdeter" data-status="" data-id="864">确定</span><span class="scene_option" data-type="takcancel" data-id="864">取消</span></div>
+	</div>
+	<div class="ftbtns">
+		<div class="wrap clearfix">
+			<div class="tips">还能上传<i>2</i>张图片</div><div class="fl tit">标题</div>
+			<div class="btns"><a href="javascript:;" class="scene_option" data-type="savecg" data-id="864">存草稿</a><a href="javascript:;" class="sbu scene_option" data-type="savetj" data-id="864">提交</a></div>
+		</div>
+	</div>
+</form>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery-ui.min.js"></script>
+<script src="/js/layui/layui.js"></script>
+<script>
+	$( "#sortable" ).sortable();
+	$( "#sortable" ).disableSelection();
+	$(".nullcnt").height($(window).height()*0.3);
+	window.onresize=function(){
+		$(".nullcnt").height($(window).height()*0.3);
+	}
+	var arproject_status = 1;
+	layui.config({
+		base: '/js/'
+	}).use('user');
+</script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+
+<div class="mainbody">
+	<div class="mainwrap wrap">
+		<div class="maincont pr">
+			<div class="mainmenu pa">
+				<ul>
+					<li class="menuitem1"><a href="#!/admin/index"><em></em><span>云图管理</span></a></li>
+					<li class="menuitem2"><a href="#!/admin/user"><em></em><span>个人资料</span></a></li>
+					<li class="menuitem3"><a href="#!/admin/account"><em></em><span>我的账户</span></a></li>
+					<li class="menuitem4 active"><a href="#!/admin/order"><em></em><span>我的订单</span></a></li>
+				</ul>
+
+			</div>
+			<div class="myorder contwrap clearfix">
+				<div class="conttitle">
+					<h1>我的订单</h1>
+				</div>
+				<div class="contdetail">
+					<form class="layui-form" action="/index/account/order.html" method="get">
+						<div class="searchbar clearfix">
+							<input type="text" name="starttime" value="" readonly class="layui-input laydate-icon times" placeholder="开始日" id="LAY_demorange_s">
+							<input type="text" name="endtime" value="" readonly class="layui-input laydate-icon times" placeholder="截止日" id="LAY_demorange_e">
+							<span class="fl">订单状态：</span>
+							<div class="select">
+								<select name="status">
+									<option value="">全部</option>
+									<option value="待支付" >待支付</option>
+									<option value="已支付" >已支付</option>
+									<option value="已取消" >已取消</option>
+									<option value="已发货" >已发货</option>
+								</select>
+							</div>
+
+							<div class="submits">
+								<input type="submit" value="查询" class="webtn"/>
+							</div>
+						</div>
+					</form>
+					<div class="ordercont">
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<th>订单号</th>
+								<th>时间</th>
+								<th>支付类型</th>
+								<th class="tabcont">订单简介</th>
+								<th>金额</th>
+								<th>状态</th>
+								<th>操作</th>
+							</tr>
+							<tr>
+								<td>20170714184712683213</td>
+								<td>2017-07-14 18:47:12</td>
+								<td>微信</td>
+								<td>
+									在线充值
+								</td>
+								<td>5</td>
+								<td>已支付</td>
+								<td>获得10张</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="ctkmain4 none" id="payResume">
+		<form action="/index/account/recharge.html" method="post" id="payform">
+			<ul class="zfstyle clearfix">
+				<li class="on" data-value="1"><i><img src="http://ss.ppt20.com/images/ppdt/zfico2.png"></i><div class="icon"><img src="http://ss.ppt20.com/images/ppdt/tureico.png"></div></li>
+				<li data-value="2"><i><img src="http://ss.ppt20.com/images/ppdt/zfico1.png"></i></li>
+			</ul>
+			<input type="hidden" id="payment" name="payment" value="1" >
+			<input type="hidden" id="trade_sn" name="trade_sn" value="">
+		</form>
+	</div>
+</div>
+<div class="graybg"></div>
+<div class="takmains">
+	<div class="closed takcancel"><img src="/public/home/images/closedico.png"></div>
+	<div class="cont">
+		<span>确定取消该订单吗？</span>
+	</div>
+	<div class="btns"><a href="javascript:;" class="scene_option takdeter" data-order="">确定</a><a href="javascript:;" class="scene_option takcancel">取消</a></div>
+</div>

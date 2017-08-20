@@ -1,0 +1,12 @@
+.contdetail .maincont .conttitle {
+	padding: 0;
+	border-bottom: none;
+	background: #fff;
+}
+.contdetail .center-main{
+	background: #fff;
+	padding: 0px;
+	box-shadow: none;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
