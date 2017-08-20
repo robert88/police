@@ -1,5 +1,6 @@
 body{background: #fafafa;}
 .center-main,.center-upload,.mainbody{margin-top: 107px;      margin-bottom: 20px;}
+.clean:after{content: ""; display: block;clear: both}
 .center-header{ height: 80px; background: url(../img/center-header-bg.png) repeat-y; padding: 10px 0; color: #fff; font-size: 18px;line-height: 58px;}
 .center-header .logo{ height: 58px; }
 .center-header .logo img{ display:block; width: 58px; line-height: 58px;}

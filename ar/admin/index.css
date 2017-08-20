@@ -1,12 +1,25 @@
-.contdetail .maincont .conttitle {
-	padding: 0;
-	border-bottom: none;
-	background: #fff;
-}
-.contdetail .center-main{
-	background: #fff;
+.center-main{
+	background: none;
 	padding: 0px;
 	box-shadow: none;
-	margin-top: 10px;
-	margin-bottom: 20px;
+	max-width: 1366px;
+	min-width: 1288px;
+	width: 100%;
+	margin: 107px auto 20px auto;
+}
+#pages {
+	padding: 10px 0 40px;
+	height: 36px;
+	text-align: center;
+}
+.center-main .addarbtn a{
+	float:none;
+	margin-top:20px;
+	margin-left:20px;
+}
+.center-list-main .title{
+	display:none;
+}
+.center-list-main .conts .pic{
+	transition: all 0.3s ease-in-out 0s;
 }

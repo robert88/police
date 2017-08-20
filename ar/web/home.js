@@ -36,7 +36,7 @@ $(function(){
 		$('.gh').click();
 	});
 //	滑屏
-	var anchors =  ['home', 'services', 'cases', 'download','contact','footer'];
+	var anchors =  ['home', 'services', 'cases', 'download','contact'];
 	$('.page-wrap').fullpage({
 		anchors:anchors,
 		verticalCentered: !1,
@@ -51,10 +51,21 @@ $(function(){
 				$('.gb-header').removeClass('show');
 				$('#fp-nav').addClass('selected');
 			}
+
+			if(index == anchors.length){
+				$("footer").addClass("pageshow");
+
+			}else{
+				$("footer").removeClass("pageshow");
+			}
+			if(anchors[index-1]=="download"&& !$("#hands").data("init")){
+				$("#hands").parallax();
+				$("#hands").data("init",true);
+			}
 		},
 		onLeave: function(index, nextIndex, direction){
 
-			if(index == anchors.length-1 && direction == 'down'){
+			if(index == anchors.length-1){
 				$("footer").addClass("pageshow");
 
 			}else{

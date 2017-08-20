@@ -10,10 +10,10 @@
   <meta name="renderer" content="webkit">
   <meta name="description" content="拍多多">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" media="screen">
+  <link rel="stylesheet" href="mirror/css/style.css">
   <link rel="stylesheet" href="mirror/css/glide.css">
   <link rel="stylesheet" href="mirror/css/circliful.css">
   <link rel="stylesheet" href="mirror/css/fp.css">
-  <link rel="stylesheet" href="mirror/css/style.css">
   <link rel="stylesheet" href="mirror/css/responsive.css">
 </head>
 
@@ -23,16 +23,16 @@
   <div class="logo"> <a href="/"><img src="mirror/img/logo.png"></a> </div>
   <div class="nav">
     <ul>
-      <li><a href="/index.html"><span class="s1">首页</span><span class="s2">Home</span></a></li>
+      <li  class="active"><a href="/index.html"><span class="s1">首页</span><span class="s2">Home</span></a></li>
 
-			<li><a class="scene_option"  data-type="redirect" data-url="#!web/list.html"><span class="s1">我的云图</span><span class="s2">Picture</span></a></li>
+      <li><a class="scene_option"  data-type="redirect" data-url="/admin.html#!admin/index.html"><span class="s1">我的云图</span><span class="s2">Picture</span></a></li>
 
-      <li><a class="scene_option"  data-type="redirect" data-url="/admin.html"><span class="s1">个人中心</span><span class="s2">Individual</span></a></li>
+      <li><a class="scene_option"  data-type="redirect" data-url="/admin.html#!admin/account.html"><span class="s1">个人中心</span><span class="s2">Individual</span></a></li>
 
       <li><a href="/index.html#download"><span class="s1">下载</span><span class="s2">Download</span></a></li>
-      <li><a href="/index.html#download"><span class="s1">合作加盟</span><span class="s2">Download</span></a></li>
+      <li><a href="/index.html#!/web/join.html"><span class="s1">合作加盟</span><span class="s2">Join</span></a></li>
 
-      <li><a href="/a/news/"><span class="s1">帮助</span><span class="s2">Help</span></a></li>
+      <li><a href="/index.html#!/web/about.html"><span class="s1">帮助</span><span class="s2">Help</span></a></li>
 
     </ul>
     <div class="login"><a id="loginTrigger" class="mr10 scene_option" data-type="logintk">登录</a>/<a class="ml10 scene_option" data-type="registertk">注册</a></div>
@@ -53,18 +53,21 @@
         <h2><a href="/index.html#home">首页<em>Home</em></a></h2>
       </li>
       <li class="h1">
-        <h2><a class="scene_option"  data-type="redirect" data-url="#!web/list.html">我的云图<em> Picture</em></a></h2>
+        <h2><a class="scene_option"  data-type="redirect" data-url="/admin.html#!admin/index.html">我的云图<em> Picture</em></a></h2>
       </li>
 
       <li class="h2">
-        <h2><a class="scene_option"  data-type="redirect" data-url="#!web/list.html">个人中心<em>Individual</em></a></h2>
+        <h2><a class="scene_option"  data-type="redirect" data-url="/admin.html#!admin/account.html">个人中心<em>Individual</em></a></h2>
       </li>
 
       <li class="h3">
         <h2><a href="/index.html#download">下载<em>Download</em></a></h2>
       </li>
+      <li class="h33">
+        <h2><a href="/index.html#!/web/join.html">合作加盟<em>Join</em></a></h2>
+      </li>
       <li class="h4">
-        <h2><a href="/index.html#help">帮助<em>Help</em></a></h2>
+        <h2><a href="/index.html#!/web/about.html">帮助<em>Help</em></a></h2>
       </li>
 
       <li class="h5">
@@ -92,8 +95,8 @@
         <div class="zprts tabct" style="display: block;">
           <div class="tips errormsg"></div>
           <ul>
-            <li><span><input type="text" name="mobile" class="webtxt user" placeholder="手机号" datatype="m" ajaxurl="/index/login/check_input.html" nullmsg="手机号码不能为空" errormsg="请输入正确的手机号码" maxlength="11"></span></li>
-            <li><span><input type="password" name="pass" class="webtxt psw" placeholder="密码" nullmsg="密码不能为空" errormsg="密码至少6个字符,最多20个字符！" datatype="*6-20"></span></li>
+            <li><span class="user-input"><input type="text" name="mobile" class="webtxt user" placeholder="手机号" datatype="m" ajaxurl="/index/login/check_input.html" nullmsg="手机号码不能为空" errormsg="请输入正确的手机号码" maxlength="11"></span></li>
+            <li><span class="psw-input"><input type="password" name="pass" class="webtxt psw" placeholder="密码" nullmsg="密码不能为空" errormsg="密码至少6个字符,最多20个字符！" datatype="*6-20"></span></li>
             <li>
               <span class="scene_option" data-type="rememberpass">
                 <i class="jz"> </i>
@@ -144,9 +147,10 @@
 <script type="text/javascript" src="mirror/js/jquery.queryLoader2.js"></script>
 <script type="text/javascript" src="mirror/js/jquery.wheel.js"></script>
 <script type="text/javascript" src="mirror/js/jquery.fullPage.js"></script>
+<script type="text/javascript" src="mirror/js/jquery.parallax.min.js"></script>
+<script type="text/javascript" src="mirror/js/jquery.cookie.js"></script>
 <script type="text/javascript" src="mirror/js/validform_v5.3.2_min.js"></script>
 <script type="text/javascript" src="mirror/js/login.js"></script>
-<script type="text/javascript" src="mirror/js/jquery.cookie.js"></script>
 <!--s:主题部分-->
 <div id="pageCss"></div>
 <div id="page"></div>
@@ -179,19 +183,20 @@
 
 <footer>
   <div class="links">
-    <a href="http://www.adminbuy.cn/" target="_blank">我的云图</a>
-    <a href="http://www.adminbuy.cn/" target="_blank">个人中心</a>
-    <a href="http://www.adminbuy.cn/" target="_blank">帮助</a>
+    <a class="scene_option" data-type="redirect" data-url="/admin.html#!admin/index.html">我的云图</a>
+    <a  class="scene_option" data-type="redirect" data-url="/admin.html#!admin/account.html">个人中心</a>
   </div>
   <div class="links">
-    <a href="http://www.adminbuy.cn/" target="_blank">关于我们</a>
-    <a href="http://www.adminbuy.cn/" target="_blank">版权声明</a>
-    <a href="http://www.adminbuy.cn/" target="_blank">免责声明</a>
-    <a href="http://www.adminbuy.cn/" target="_blank">用户行为</a>
+    <a href="/index.html#!/web/right.html" target="_blank">版权声明</a>
+    <a href="/index.html#!/web/disclaimer.html" target="_blank">免责声明</a>
   </div>
   <div class="links">
-    <a href="/a/case/">新手指南</a>
-    <a href="/a/join/">每日签到</a>
+    <a href="/index.html#!/web/about.html">新手指南</a>
+    <a href="/index.html#!/web/about.html">帮助</a>
+  </div>
+  <div class="links">
+    <a href="/index.html#!/web/contractus.html" target="_blank">关于我们</a>
+    <a href="/index.html#!/web/behavior.html">用户行为</a>
   </div>
   <div class="qr"> </div>
   <div class="contactc">
@@ -201,7 +206,7 @@
     </ul>
   </div>
   <div class="clear"></div>
-  <div class="copy">©2004-2016 拍多多 版权所有.<a href="http://www.miitbeian.gov.cn" target="_blank">苏ICP12345678</a></div>
+  <div class="copy" ><a>©2004-2016 拍多多 版权所有.</a><a href="http://www.miitbeian.gov.cn" target="_blank">苏ICP12345678</a></div>
 </footer>
 
 

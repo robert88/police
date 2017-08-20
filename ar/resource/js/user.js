@@ -115,7 +115,7 @@ layui.define(['form', 'layer', 'laydate'], function (exports) {
 		//新增
 		addwork:function(obj,id){
 			$.ajax({
-			    url: Routing.generate('kit_web_work_json', {type: 'add_project'}),
+			    url: '/test/arproject/add_arproject.json',//Routing.generate('kit_web_work_json', {type: 'add_project'}),
 			    type: 'post',
 			    data: {title:'标题'},
 			    success: function (info) {
@@ -222,7 +222,7 @@ layui.define(['form', 'layer', 'laydate'], function (exports) {
 			  shadeClose: false,
 			  shade: 0.8,
 			  area: ['700px', '480px'],
-			  content: Routing.generate('kit_web_work_picture')
+			  content: 'admin/selectPicture.html'//Routing.generate('kit_web_work_picture')
 			}); 
 		},
 		//上传视频
@@ -238,7 +238,7 @@ layui.define(['form', 'layer', 'laydate'], function (exports) {
 			  shadeClose: false,
 			  shade: 0.8,
 			  area: ['300px', '200px'],
-			  content: Routing.generate('kit_web_work_video')
+			  content:'/admin/selectVideo.html'//Routing.generate('kit_web_work_video')
 			});
 			
 		},
@@ -363,10 +363,9 @@ layui.define(['form', 'layer', 'laydate'], function (exports) {
 		
 	}
 
-	
-	
-	
-	$(".scene_option").on('click',function(){
+
+
+	$(document).off("click.user",".scene_option").on('click.user',".scene_option",function(){
 		var type=$(this).data('type'),id=$(this).data('id');
 		if(arproject_status == 2)
 		{
@@ -378,7 +377,9 @@ layui.define(['form', 'layer', 'laydate'], function (exports) {
 				return false;
 			}
 		}
-		scene[type](this,id);
+		if(scene[type]){
+			scene[type](this,id);
+		}
 	})
 
 	exports('user', {});

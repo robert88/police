@@ -253,8 +253,10 @@ $(function(){
 		}
 	}
 
-	$(".scene_option").on('click',function(){
+	$(document).off("click.login",".scene_option").on('click.login',".scene_option",function(){
 		var type=$(this).data('type'),id=0;
-		scene[type](this,id);
+		if(scene[type]){
+			scene[type](this,id);
+		}
 	})
 });
