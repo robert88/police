@@ -1,11 +1,11 @@
 .page1 {
-	background: url(../img/bg1.jpg) no-repeat center;
+	background: url(/mirror/img/bg1.jpg) no-repeat center;
 	background-size: cover !important;
 	height: 886px;
 }
 /*.page1 .nav{
 
-	background: url(../img/img4.png) repeat-x center; height: 32px; position: absolute; left: 0; right: 0; bottom: -60px; text-align: center;
+	background: url(/mirror/img/img4.png) repeat-x center; height: 32px; position: absolute; left: 0; right: 0; bottom: -60px; text-align: center;
 
 	-webkit-transition: all 1s;
 
@@ -31,13 +31,13 @@
 
 .page1 .nav li a{
 
-	background: url(../img/img3.png) no-repeat center; width: 32px; height: 32px; display: inline-block;
+	background: url(/mirror/img/img3.png) no-repeat center; width: 32px; height: 32px; display: inline-block;
 
 }
 
 .page1 .nav li.selected a{
 
-	background-image: url(../img/img2.png);
+	background-image: url(/mirror/img/img2.png);
 
 }*/
 
@@ -119,7 +119,7 @@
 	transform: scale(1, 1)
 }
 .page2 {
-	background: url(../img/bg7.jpg) no-repeat center;
+	background: url(/mirror/img/bg7.jpg) no-repeat center;
 	background-size: cover !important;
 	height: 964px;
 }
@@ -194,16 +194,16 @@
 	transition-delay: 400ms;
 }
 /*.page2 li.l1 .ico {*/
-/*background-image: url(../img/img5.png);*/
+/*background-image: url(/mirror/img/img5.png);*/
 /*}*/
 /*.page2 li.l2 .ico {*/
-/*background-image: url(../img/img6.png);*/
+/*background-image: url(/mirror/img/img6.png);*/
 /*}*/
 /*.page2 li.l3 .ico {*/
-/*background-image: url(../img/img7.png);*/
+/*background-image: url(/mirror/img/img7.png);*/
 /*}*/
 /*.page2 li.l4 .ico {*/
-/*background-image: url(../img/img8.png);*/
+/*background-image: url(/mirror/img/img8.png);*/
 /*}*/
 .page2 li.selected .ico {
 	background-position: center bottom;
@@ -213,7 +213,7 @@
 	margin-top: 35px;
 }
 .page2 li .link a {
-	background: url(../img/img41.png) no-repeat;
+	background: url(/mirror/img/img41.png) no-repeat;
 	width: 48px;
 	height: 48px;
 	display: inline-block;
@@ -301,7 +301,7 @@
 	line-height: 24px;
 }
 .page3 {
-	background: url(../img/bg4.jpg) repeat center;
+	background: url(/mirror/img/bg4.jpg) repeat center;
 	height: 1040px;
 }
 .page3 .wrapper {
@@ -617,7 +617,7 @@
 	transition-delay: 2200ms;
 }
 .page4 {
-	background: url(../img/bg5.jpg) no-repeat center;
+	background: url(/mirror/img/bg5.jpg) no-repeat center;
 	background-size: cover !important;
 	height: 998px;
 }
@@ -735,15 +735,15 @@
 .indptwo .pics { margin-left: 38px; height: 100%;  }
 .indptwo .words {      width: 341px;  padding-top: 85px;  }
 
-/*.indptwo .dwbtn .ios {  background: #1caa8c url(../img/iosico.png) no-repeat 20px center;  }*/
-/*.indptwo .dwbtn .android {  background: #1caa8c url(../img/azico.png) no-repeat 20px center;  }*/
+/*.indptwo .dwbtn .ios {  background: #1caa8c url(/mirror/img/iosico.png) no-repeat 20px center;  }*/
+/*.indptwo .dwbtn .android {  background: #1caa8c url(/mirror/img/azico.png) no-repeat 20px center;  }*/
 .indptwo .dwbtn {  width: 190px;  }
 .indptwo .dwpic i {  display: block;  color: #858072;  font-size: 16px;  padding-bottom: 12px;  }
 .indptwo .dwpic {  padding-left: 40px;  }
 .indptwo .downcnt {  padding-top: 70px;  }
 .indptwo .dwbtn a {  display: block;  height: 51px;  line-height: 51px;  border-radius: 3px;  color: #fff;  font-size: 16px;  padding-left: 60px;  margin-bottom: 23px;  }
 
-.indptwo .shot{width: 392px; height: 351px; position: absolute; top:88px;left: -15px;z-index: 8;}
+.indptwo .shot{width: 392px; height: 351px; position: absolute;top: 107px;left: -15px;z-index: 8;}
 .indptwo .lines{    width: 178px;
 	height: 69px;
 	position: absolute;top: 104px;left: 85px;
@@ -780,7 +780,7 @@
 .indptwo .circular{  box-sizing: border-box;  }
 
 .page5 {
-	background: url(../img/bg6.jpg) no-repeat center;
+	background: url(/mirror/img/bg6.jpg) no-repeat center;
 	background-size: cover !important;
 	height: 1115px;
 }
@@ -918,7 +918,7 @@
 	height: 128px;
 	background-size: 100% 100%;
 	display:inline-block;
-	background-image: url(../img/erwei.png);
+	background-image: url(/mirror/img/erwei.png);
 }
 
 .page5.active .nav li {
@@ -937,7 +937,7 @@
 	min-width: 100%;
 }
 .page6 .bg {
-	background: url(../img/img50.png) repeat;
+	background: url(/mirror/img/img50.png) repeat;
 	position: absolute;
 	left: 0;
 	right: 0;

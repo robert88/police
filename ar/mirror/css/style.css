@@ -1514,6 +1514,34 @@ footer.pageshow .copy a{
 footer.pageshow .qr,footer.pageshow  .contactc{
 	display:none;
 }
-#page{
+
+.pager{
 	min-height:90px;
 }
+.pager .pager-next,.pager .pager-prev,.pager .pager-item{
+	border-radius: 4px;
+	padding: 5px 10px;
+	margin-left: 8px;
+	background: #eee;
+	text-align: center;
+	border: #c1c1c1;
+	display: inline-block;
+}
+.pager .pager-item.active{
+	background: #8ed5f6;
+	color: #fafafa;
+	font-weight:bold;
+}
+.pager .pageinfo{
+	margin-left: 20px
+}
+.pager a.disabled{
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+/* width: 20px; */
+/* line-height: 22px; */
+/* height: 22px; */
+
+/* padding: 10px; */

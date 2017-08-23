@@ -23,3 +23,61 @@
 .center-list-main .conts .pic{
 	transition: all 0.3s ease-in-out 0s;
 }
+.center-list-main{padding-top: 20px; margin: 0 -10px;}
+.center-list-main .zprt{ width: 25%; float: left; padding:20px 10px;}
+.center-list-main .conts{
+	box-shadow: 2px 2px 10px rgba(0,0,0,.2);
+	border-radius: 9px;
+	position:relative;
+	overflow: hidden;}
+.center-list-main .conts:after{
+	content:"";
+	pointer-events: none;
+	width:100%;
+	left:0;
+	top:0;
+	height: 100%;
+	position: absolute;
+	background:url(/mirror/img/kuang1.png);
+	background-size: 100% 100%;
+}
+.center-list-main .conts .pic{position: relative; height:219px; overflow: hidden; border-bottom: 1px solid #d0d0d0;    border-radius: 10px;}
+.center-list-main .conts .pic i{display: block; position: absolute; height:20px; line-height: 22px; width: 60px; border-radius: 4px; background: #9e9d9d; color: #fff; top: 8px; left: 12px; text-align: center; font-size: 12px; overflow: hidden;}
+.center-list-main .conts .pic .btns{display:none;
+	text-align: center;
+	padding-top: 100px;
+	position: relative;}
+.center-list-main .conts .pic:hover .btns{display:block;}
+.center-list-main .conts .pic img{ display: block; width: 100%;position:absolute;left:0;top:0; height:100%}
+.center-list-main .infor{position: relative; padding: 0 10px;}
+.center-list-main .conts p{
+	transition: all 0.3s ease-in-out 0s;
+	height: 46px;
+	position: absolute;
+	line-height: 33px;
+	width: 100%;
+	bottom: -46px;
+	background: rgba(0,0,0,0.3);
+	color: #ffffff;
+	padding: 6px 17px 0 17px;
+	display: block;
+	font-size: 12px;}
+.center-list-main .conts:hover p{
+	bottom: 0;
+}
+.center-list-main .conts p i{float:right;    color: #b0efed;position:relative}
+.center-list-main .conts p i:after{    width: 10px;
+	border-radius: 10px;
+	height: 10px;
+	left: -13px;
+	background: #b0efed;
+	top: 50%;
+	margin-top: -6px;
+	position: absolute;
+	content: "";}
+.center-list-main .title{padding: 10px 0 0;}
+.center-list-main .title h2{ display: inline-block; height: 30px; line-height: 30px; color: #444;}
+.center-list-main .title i{ display: inline-block; padding:0 5px; font-size: 20px; cursor: pointer; color: #444;}
+.center-list-main .edit{display: none; position: absolute; top: 0; left: 0; right: 0; bottom: 0;  background: #fff; z-index: 66; padding:6px 10px 0;}
+.center-list-main .edit input{ border: none; border-bottom: 1px solid #ccc; height: 30px; line-height: 30px; background:none; width: 185px;}
+.center-list-main .edit i{ padding: 0 6px; line-height: 30px; cursor: pointer;}

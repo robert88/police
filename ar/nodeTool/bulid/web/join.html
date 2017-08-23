@@ -23,16 +23,16 @@
   <div class="logo"> <a href="/"><img src="/mirror/img/logo.png"></a> </div>
   <div class="nav">
     <ul>
-      <li  class="active"><a href="/index.html"><span class="s1">首页</span><span class="s2">Home</span></a></li>
+      <li  class="active"><a href="/web/home.html#home"><span class="s1">首页</span><span class="s2">Home</span></a></li>
 
-      <li><a class="scene_option"  data-type="redirect" data-url="/admin.html#!/admin/index.html"><span class="s1">我的云图</span><span class="s2">Picture</span></a></li>
+      <li><a class="scene_option"  data-type="redirect" data-url="/admin/index.html"><span class="s1">我的云图</span><span class="s2">Picture</span></a></li>
 
-      <li><a class="scene_option"  data-type="redirect" data-url="/admin.html#!/admin/account.html"><span class="s1">个人中心</span><span class="s2">Individual</span></a></li>
+      <li><a class="scene_option"  data-type="redirect" data-url="/admin/account.html"><span class="s1">个人中心</span><span class="s2">Individual</span></a></li>
 
-      <li><a href="/index.html#download"><span class="s1">下载</span><span class="s2">Download</span></a></li>
-      <li><a href="/index.html#!/web/join.html"><span class="s1">合作加盟</span><span class="s2">Join</span></a></li>
+      <li><a href="/web/home.html#download"><span class="s1">下载</span><span class="s2">Download</span></a></li>
+      <li><a href="/web/join.html"><span class="s1">合作加盟</span><span class="s2">Join</span></a></li>
 
-      <li><a href="/index.html#!/web/about.html"><span class="s1">帮助</span><span class="s2">Help</span></a></li>
+      <li><a href="/web/about.html"><span class="s1">帮助</span><span class="s2">Help</span></a></li>
 
     </ul>
     <div class="login"><a id="loginTrigger" class="mr10 scene_option" data-type="logintk">登录</a>/<a class="ml10 scene_option" data-type="registertk">注册</a></div>
@@ -50,24 +50,24 @@
     <h1>Menu</h1>
     <ul>
       <li class="h0">
-        <h2><a href="/index.html#home">首页<em>Home</em></a></h2>
+        <h2><a href="/web/home.html#home">首页<em>Home</em></a></h2>
       </li>
       <li class="h1">
-        <h2><a class="scene_option"  data-type="redirect" data-url="/admin.html#!/admin/index.html">我的云图<em> Picture</em></a></h2>
+        <h2><a class="scene_option"  data-type="redirect" data-url="/admin/index.html">我的云图<em> Picture</em></a></h2>
       </li>
 
       <li class="h2">
-        <h2><a class="scene_option"  data-type="redirect" data-url="/admin.html#!/admin/account.html">个人中心<em>Individual</em></a></h2>
+        <h2><a class="scene_option"  data-type="redirect" data-url="/admin/account.html">个人中心<em>Individual</em></a></h2>
       </li>
 
       <li class="h3">
-        <h2><a href="/index.html#download">下载<em>Download</em></a></h2>
+        <h2><a href="/web/home.html#download">下载<em>Download</em></a></h2>
       </li>
       <li class="h33">
-        <h2><a href="/index.html#!/web/join.html">合作加盟<em>Join</em></a></h2>
+        <h2><a href="/web/join.html">合作加盟<em>Join</em></a></h2>
       </li>
       <li class="h4">
-        <h2><a href="/index.html#!/web/about.html">帮助<em>Help</em></a></h2>
+        <h2><a href="/web/about.html">帮助<em>Help</em></a></h2>
       </li>
 
       <li class="h5">
@@ -207,152 +207,27 @@
 	<span>赶紧加入我们吧！</span> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=111111&amp;site=qq&amp;menu=yes&amp;">立即咨询</a>
 </section>
 </article>
-<script>$(function(){;(function(){ var innerModule = {};var innerRequire = function(index){ return innerModule[index]; }; /*../web/home.js*/(function() {
-    $(function() {
-        $("html").addClass("desktop fp-enabled").css({
-            height: "100%",
-            overflow: "hidden"
-        });
-        $("body").css({
-            height: "100%",
-            overflow: "hidden"
-        }).queryLoader2({
-            barColor: "#111111",
-            backgroundColor: "#202020",
-            percentage: true,
-            barHeight: 30,
-            completeAnimation: "grow"
-        });
-        $(".slide-wrap #s1 video").get(0).play();
-        _slideAutoChange = setInterval("$.slideAutoChange()", 15e3);
-        $(".page2 li").hover(function() {
-            $(this).addClass("selected");
-        }, function() {
-            $(this).removeClass("selected");
-        });
-        $(".gh").click(function() {
-            if ($(this).hasClass("selected")) {
-                $(this).removeClass("selected");
-                $("#nav").addClass("hide");
-            } else {
-                $(this).addClass("selected");
-                $("#nav").removeClass("hide");
-            }
-        });
-        $(".nav_main").on("click", "a", function() {
-            $(".gh").click();
-        });
-        var anchors = [ "home", "services", "cases", "download", "contact" ];
-        $(".page-wrap").fullpage({
-            anchors: anchors,
-            verticalCentered: !1,
-            navigation: !0,
-            afterLoad: function(anchorLink, index) {
-                if (index == 1) {
-                    $("#fp-nav").addClass("selected");
-                    $(".gb-nav").removeClass("show");
-                    $(".gb-header").addClass("show");
-                } else {
-                    $(".gb-nav").addClass("show");
-                    $(".gb-header").removeClass("show");
-                    $("#fp-nav").addClass("selected");
-                }
-                if (index == anchors.length) {
-                    $("footer").addClass("pageshow");
-                } else {
-                    $("footer").removeClass("pageshow");
-                }
-                if (anchors[index - 1] == "download" && !$("#hands").data("init")) {
-                    $("#hands").parallax();
-                    $("#hands").data("init", true);
-                }
-            },
-            onLeave: function(index, nextIndex, direction) {
-                if (index == anchors.length - 1) {
-                    $("footer").addClass("pageshow");
-                } else {
-                    $("footer").removeClass("pageshow");
-                }
-            }
-        });
-        function currVideoPlay() {
-            $(".slide-wrap video").get(0).pause();
-            $(".slide-wrap li.selected video").get(0).play();
-        }
-        $("#slide-nav li.nav-bullet-container").click(function() {
-            $("#slide-nav li.nav-bullet-container").removeClass("active").eq($(this).index()).addClass("active");
-            $(".slide-wrap li").removeClass("selected").eq($(this).data("index")).addClass("selected");
-            currVideoPlay();
-        });
-        var curr, next, prev;
-        $.extend({
-            slideAutoChange: function() {
-                curr = $(".slide-wrap li.selected");
-                if (curr.next().size() > 0) {
-                    next = curr.next();
-                } else {
-                    next = $(".slide-wrap li:first");
-                }
-                curr.removeClass("selected");
-                next.addClass("selected");
-                $("#slide-nav li.nav-bullet-container").removeClass("active").eq(next.index()).addClass("active");
-                currVideoPlay();
-            }
-        });
-        $(".page1").mousewheel(function(event, delta) {
-            curr = $(".slide-wrap li.selected");
-            if (delta > 0) {
-                if (curr.prev().size() > 0) {
-                    prev = curr.prev();
-                } else {
-                    prev = $(".slide-wrap li:last");
-                }
-                curr.removeClass("selected");
-                prev.addClass("selected");
-                $("#slide-nav li.nav-bullet-container").removeClass("active").eq(prev.index()).addClass("active");
-                currVideoPlay();
-                return false;
-            } else {
-                if (curr.next().size() > 0) {
-                    next = curr.next();
-                } else {
-                    next = $(".slide-wrap li:first");
-                }
-                if (curr.next().size() > 0) {
-                    curr.removeClass("selected");
-                    next.addClass("selected");
-                    $("#slide-nav li.nav-bullet-container").removeClass("active").eq(next.index()).addClass("active");
-                    currVideoPlay();
-                    return false;
-                } else {}
-            }
-        });
-        $("#nav, #loader").mousewheel(function(event, delta) {
-            return false;
-        });
-        $(".myStat").circliful();
-    });
-})();})();})</script>
+
 <!--e:主题部分-->
 
 
 
 <footer>
   <div class="links">
-    <a class="scene_option" data-type="redirect" data-url="/admin.html#!/admin/index.html">我的云图</a>
-    <a  class="scene_option" data-type="redirect" data-url="/admin.html#!/admin/account.html">个人中心</a>
+    <a class="scene_option" data-type="redirect" data-url="/admin/index.html">我的云图</a>
+    <a  class="scene_option" data-type="redirect" data-url="/admin/account.html">个人中心</a>
   </div>
   <div class="links">
-    <a href="/index.html#!/web/right.html" target="_blank">版权声明</a>
-    <a href="/index.html#!/web/disclaimer.html" target="_blank">免责声明</a>
+    <a href="/web/right.html" target="_blank">版权声明</a>
+    <a href="/web/disclaimer.html" target="_blank">免责声明</a>
   </div>
   <div class="links">
-    <a href="/index.html#!/web/about.html">新手指南</a>
-    <a href="/index.html#!/web/about.html">帮助</a>
+    <a href="/web/about.html">新手指南</a>
+    <a href="/web/about.html">帮助</a>
   </div>
   <div class="links">
-    <a href="/index.html#!/web/contractus.html" target="_blank">关于我们</a>
-    <a href="/index.html#!/web/behavior.html">用户行为</a>
+    <a href="/web/contractus.html" target="_blank">关于我们</a>
+    <a href="/web/behavior.html">用户行为</a>
   </div>
   <div class="qr"> </div>
   <div class="contactc">

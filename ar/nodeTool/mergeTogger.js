@@ -15,7 +15,7 @@ function merge(parseFile, outPath,inPath) {
 	console.log("-------common index:".green,parseFile,"-----------".green)
 
 	var files = wake.findFile(inPath,"html",true);
-
+	var jscode;
 	for(var i=0;i<files.length;i++){
 		var file = files[i];
 		var outFile = getBuildPath(files[i],outPath);
@@ -23,17 +23,17 @@ function merge(parseFile, outPath,inPath) {
 		var js = file.replace(".html",".js");
 		var css= file.replace(".html",".css");
 		var fileData = wake.readData(file)
-
-		//同名js文件
+	//同名js文件
 		if(wake.isExist(js)){
 			var jsData = wake.readData( js )
-			var jscode;
 			if(jsData.trim()==""){
 				jscode = "";
 			}else{
 				jscode = mergeParseJs.parseJs(js);
 				jscode = "<script>$(function(){"+jscode + "})</script>"
 			}
+		}else{
+			jscode="";
 		}
 		if(wake.isExist(css)){
 			var cssData = wake.readData( css )
@@ -44,11 +44,18 @@ function merge(parseFile, outPath,inPath) {
 				cssCode = mergeParseJs.parseCss(css);
 				cssCode = "<style  type='text/css'>"+cssCode+"</style>"
 			}
+		}else{
+			cssCode = "";
 		}
-		var lastData = indexData.replace('<div id="pageCss"></div>',cssCode)
+
+
+		var lastData = indexData.replace('<div id="pageCss"></div>',cssCode||"")
 			.replace('<div id="page"></div>',fileData.replace(/#\/web\//g,""))
-			.replace('<div id="pageJs"></div>',jscode);
+			.replace('<div id="pageJs"></div>',jscode||"");
+		//将简写替换加上.html
 		lastData = lastData.replace(/href\s*=\s*"?#([^"]+)"?/gm,function(m,m1){var t=m1.split("?");return ('href="'+(t[0].indexOf(".html")!=-1?t[0]:t[0]+".html")+'"')})
+
+		lastData = lastData.replace(/"\/index\.html#!\/web/gm,"\"/web").replace(/"\/admin\.html#!\/admin/gm,"\"/admin").replace(/"\/index\.html#/gm,"\"/web/home.html#").replace(/"\/index\.html"/gm,"\"/web/home.html\"").replace(/"\/admin\.html"/gm,"\"/admin/index.html\"")
 		wake.writeData(outFile,lastData)
 		
 	}
@@ -93,3 +100,4 @@ merge(parseFile,bulidPath,allHtmlPath);
 merge(parseFile2,bulidPath,allHtmlPath2);
 copyPublic("../resource",bulidPath);
 copyPublic("../mirror",bulidPath);
+copyPublic("../test",bulidPath);
