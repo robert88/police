@@ -131,16 +131,17 @@ layui.define(['form', 'layer', 'laydate'], function (exports) {
 		delwork:function(obj,id){
 			var ele = $(obj).parents(".zprt");
 			$.ajax({
-			    url: '/index/arproject/del_arproject.json',
+			    url: '/test/arproject/del_arproject.json',
 			    type: 'post',
 			    data: {id:id},
 			    success: function (info) {
 			        if (info.code === 1) {
-			            ele.fadeTo("slow", 0.01, function(){//fade
-				    	ele.slideUp("slow", function() {//slide up
-					      ele.remove();//then remove from the DOM
-				    	});
-				    });
+							ele.remove();
+							if (info.code === 1) {
+								setTimeout(function () {
+									window.location.reload()
+								},200)
+							}
 			        }				
 			        layer.msg(info.msg);
 			    }
