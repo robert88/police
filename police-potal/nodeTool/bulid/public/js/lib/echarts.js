@@ -39118,7 +39118,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                if (draggable) {
 	                    el.on('drag', function () {
 	                        if (forceLayout) {
-	                            forceLayout.warnUp();
+	                            forceLayout.warmUp();
 	                            !this._layouting
 	                                && this._startForceLayoutIteration(forceLayout, layoutAnimation);
 	                            forceLayout.setFixed(idx);
@@ -40597,7 +40597,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var friction = 0.6;
 
 	        return {
-	            warnUp: function () {
+	            warmUp: function () {
 	                friction = 0.5;
 	            },
 

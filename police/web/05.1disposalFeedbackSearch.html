@@ -1,142 +1,15 @@
 <div class='ls-container'>
-
-    <form class="layui-form layui-form-panel tab-item-min-height">
-        <div class="layui-form-item searchList">
-            <div class="search-middle-gray ptb20">
-                <div class="layui-form-search-center-comb">
-                    <div class="layui-inline">
-                        <label class="layui-form-label">案（事）件编号：</label>
-                        <div class="layui-input-inline">
-                            <input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off" class="layui-input"/>
-                        </div>
-                    </div>
-                    <div class="layui-inline">
-                        <label class="layui-form-label">案（事）件类别：</label>
-                        <div class="layui-input-inline">
-                            <input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off" class="layui-input"/>
-                        </div>
-                    </div>
-                    <div class="layui-inline">
-                        <label class="layui-form-label">立(受)案编号：</label>
-                        <div class="layui-input-inline">
-                            <input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off" class="layui-input"/>
-                        </div>
-                    </div>
-                    <div class="layui-inline">
-                        <label class="layui-form-label">接警单号：</label>
-                        <div class="layui-input-inline">
-                            <input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off" class="layui-input"/>
-                        </div>
-                    </div>
-                    <div class="layui-inline layui-date-range">
-                        <label class="layui-form-label">发案时间：</label>
-                        <div class="layui-input-inline" style="width: 161px;">
-                            <input required="" type="text"  placeholder="选择日期" class="layui-input layui-date-start">
-                            <i class="color-icon-date"></i>
-                        </div>
-                        <span class="layui-form-mid" style="width: 118px;text-align: center">至</span>
-                        <div class="layui-input-inline" style="  width: 161px;">
-                            <input required="" type="text"  placeholder="选择日期"  class="layui-input layui-date-end">
-                            <i class="color-icon-date"></i>
-                        </div>
-                    </div>
-                    <div class="layui-inline layui-date-range">
-                        <label class="layui-form-label">接警时间：</label>
-                        <div class="layui-input-inline" style="width: 161px;">
-                            <input required="" type="text"  placeholder="选择日期" class="layui-input layui-date-start">
-                            <i class="color-icon-date"></i>
-                        </div>
-                        <span class="layui-form-mid" style="width: 118px;text-align: center">至</span>
-                        <div class="layui-input-inline" style="  width: 161px;">
-                            <input required="" type="text"  placeholder="选择日期"  class="layui-input layui-date-end">
-                            <i class="color-icon-date"></i>
-                        </div>
-                    </div>
-                    <div class="layui-inline">
-                        <label class="layui-form-label">提醒类型：</label>
-                        <div class="layui-input-inline">
-                            <select name="quiz">
-                                <option value="">全部</option>
-                                <option value="你工作的第一个城市">你工作的第一个城市</option>
-                                <option value="你的工号" disabled="">你的工号</option>
-                                <option value="你最喜欢的老师">你最喜欢的老师</option>
-                            </select>
-                        </div>
-                    </div>
+    <form class="layui-form layui-form-pane1" action="">
+        <div class="layui-form-wrap">
+            <div class="layui-form-item layui-form-item-wrap">
+                <label class="layui-form-label" style="margin-left:144px">编号：</label>
+                <div class="layui-input-inline ">
+                    <input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off" class="layui-input">
                 </div>
-            </div>
-            <div class="layui-form-search-footer tc mt10 mb20">
-                <div class="layui-inline">
-                    <a class="layui-btn layui-btn-opa mr30">筛选</a>
-                </div>
-                <div class="fr mr30">
-                    <a class="layui-btn layui-btn-opa"> <span class="color-icon-save"></span>导出</a>
+                <div class="layui-input-inline ">
+                    <button class="layui-btn subBtn" lay-submit="" lay-filter="*">进入</button>
                 </div>
             </div>
         </div>
-        <div class="layui-tab">
-            <ul class="layui-tab-title">
-                <li class="layui-this">所有（4）</li>
-                <li>警务监督（1）</li>
-                <li>超期预警（3）</li>
-            </ul>
-            <div class="layui-tab-content">
-                <div class="layui-tab-item layui-show">
-                    <div class="layui-table-wrap layui-table-blue feedBackTable">
-                        <table class="layui-table ">
-                            <thead>
-                            <tr>
-                                <th>案件编号</th>
-                                <th>立案编号</th>
-                                <th>案件类别</th>
-                                <th>受理时间</th>
-                                <th>发生地点</th>
-                                <th>案件状态</th>
-                                <th>报案人情况</th>
-                                <th>简要案情</th>
-                                <th>接警方式</th>
-                                <th>处警人</th>
-                                <th>所属辖区</th>
-                                <th>出警时间</th>
-                                <th>出警结果</th>
-                                <th>提醒时间</th>
-                                <th>提醒类型</th>
-                                <th>操作</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td> <span class="layui-text-danger">警务监督</span></td>
-                                <td><a class="layui-text-warn layui-link feedBackTableOpa" data-src="http://127.0.0.1/web/selfPage/05.3disposalFeedbackTable.html">操作</a></td>
-                            </tr></tbody>
-                        </table>
-                        <div class="layui-form no-border pageFooter-wrap">
-                            <div class="pageFooter"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="layui-tab-item">2</div>
-                <div class="layui-tab-item">3</div>
-                <div class="layui-tab-item">4</div>
-                <div class="layui-tab-item">5</div>
-                <div class="layui-tab-item">6</div>
-            </div>
-        </div>
-
     </form>
-
 </div>

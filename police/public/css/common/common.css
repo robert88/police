@@ -1,4 +1,4 @@
-body{
+﻿body{
 	min-height: 500px;
 	min-width:1060px;
 	color:#666;
@@ -13,7 +13,7 @@ header{
 	height: 5rem;
 	padding-left:150px;
 	line-height: 5rem;
-	font-size: 14px;
+	font-size: 1rem;
 }
 .color-icon-clock{
 	background: url(/public/images/clock.png);
@@ -39,14 +39,6 @@ header{
 	right:4px;
 	top:50%;
 
-}
-.color-icon-print{
-	background: url(/public/images/print.png) no-repeat;
-	width: 28px;
-	height: 21px;
-	margin-right: 4px;
-	vertical-align: sub;
-	display: inline-block;
 }
 .color-icon-jpgicon{
 	background: url(/public/images/jpgIcon.png) no-repeat center center;
@@ -164,24 +156,8 @@ header .login{
 .mr30{
 	margin-right:30px ;
 }
-.ml30{
-margin-left:30px;
-}
-.mt10{
-	margin-top:10px ;
-}
 .mt20{
 	margin-top:1.25rem;
-}
-.mb30{
-	margin-bottom: 30px;
-}
-.fr{
-	float:right;
-}
-.ptb20{
-	padding-top:20px;
-	padding-bottom: 20px;
 }
 .t-green{
 	color:#009688;
@@ -328,28 +304,3 @@ nav .bottom{
 	bottom: 0;
 	height:5.3125rem;
 }
-nav .layui-nav-item .tips{
-position:absolute;
-width:8px;
-height:8px;
-border-radius:50%;
-	left: 67%;
-	top: 10px;
-}
-.btn-group-tab .layui-tab-title,.btn-group-tab .layui-tab-title .layui-this:after{
-	border:none;
-}
-.tc{
-	text-align: center;
-}
-.search-middle-gray{
-	background: #fafafa;
-}
-.btn-group-tab .layui-tab-title .layui-this .layui-btn{
-	background: #4085c8;color:#fff;
-}
-.tab-item-min-height{
-	min-height: 700px;
-}
-
-

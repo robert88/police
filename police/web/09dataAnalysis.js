@@ -1,5 +1,5 @@
 require("/web/useForm.js")
-require("/web/dateRange.js")
+
 /*初始化echart控件*/
 layui.use('echart', function(){
     // debugger

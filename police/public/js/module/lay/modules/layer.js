@@ -1,9 +1,9 @@
 ﻿/**
 
- @Name：layer v3.0.3 Web弹层组件
+ @Name：layer v3.0.1 Web弹层组件
  @Author：贤心
  @Site：http://layer.layui.com
- @License：MIT
+ @License：LGPL
     
  */
 
@@ -26,7 +26,7 @@ var isLayui = window.layui && layui.define, $, win, ready = {
 
 //默认内置方法。
 var layer = {
-  v: '3.0.3',
+  v: '3.0.1',
   ie: function(){ //ie版本
     var agent = navigator.userAgent.toLowerCase();
     return (!!window.ActiveXObject || "ActiveXObject" in window) ? (
@@ -83,9 +83,9 @@ var layer = {
   },
   
   ready: function(callback){
-   var cssname = 'skinlayercss', ver = '1110';
-   isLayui ? layui.addcss('modules/layer/default/layer.css?v='+layer.v+ver, callback, cssname)
-   : layer.link('skin/default/layer.css?v='+layer.v+ver, callback, cssname);
+    var cssname = 'skinlayercss', ver = '1110';
+    isLayui ? layui.addcss('modules/layer/default/layer.css?v='+layer.v+ver, callback, cssname)
+    : layer.link('skin/default/layer.css?v='+layer.v+ver, callback, cssname);
     return this;
   },
   
@@ -169,7 +169,7 @@ var Class = function(setings){
   that.config = $.extend({}, that.config, ready.config, setings);
   document.body ? that.creat() : setTimeout(function(){
     that.creat();
-  }, 30);
+  }, 50);
 };
 
 Class.pt = Class.prototype;
@@ -192,7 +192,6 @@ Class.pt.config = {
   zIndex: 19891014, 
   maxWidth: 360,
   anim: 0,
-  isOutAnim: true,
   icon: -1,
   moveType: 1,
   resize: true,
@@ -249,7 +248,7 @@ Class.pt.creat = function(){
   ,conType = typeof content === 'object'
   ,body = $('body');
   
-  if(config.id && $('#'+config.id)[0])  return;
+  if($('#'+config.id)[0])  return;
 
   if(typeof config.area === 'string'){
     config.area = config.area === 'auto' ? ['', ''] : [config.area, ''];
@@ -326,13 +325,8 @@ Class.pt.creat = function(){
   
   //为兼容jQuery3.0的css动画影响元素尺寸计算
   if(doms.anim[config.anim]){
-    that.layero.addClass(doms.anim[config.anim]);
+    that.layero.addClass(doms.anim[config.anim]).data('anim', true);
   };
-  
-  //记录关闭动画
-  if(config.isOutAnim){
-    that.layero.data('isOutAnim', true);
-  }
 };
 
 //自适应
@@ -350,7 +344,7 @@ Class.pt.auto = function(index){
   var btnHeight = layero.find('.'+doms[6]).outerHeight() || 0;
   function setHeight(elem){
     elem = layero.find(elem);
-    elem.height(area[1] - titHeight - btnHeight - 2*(parseFloat(elem.css('padding-top'))|0));
+    elem.height(area[1] - titHeight - btnHeight - 2*(parseFloat(elem.css('padding'))|0));
   }
   switch(config.type){
     case 2: 
@@ -571,13 +565,12 @@ Class.pt.move = function(){
         ,height: dict.area[1] + Y
       })
       dict.isResize = true;
-      config.resizing && config.resizing(layero);
     }
   }).on('mouseup', function(e){
     if(dict.moveStart){
       delete dict.moveStart;
       ready.moveElem.hide();
-      config.moveEnd && config.moveEnd(layero);
+      config.moveEnd && config.moveEnd();
     }
     if(dict.resizeStart){
       delete dict.resizeStart;
@@ -896,7 +889,7 @@ layer.close = function(index){
     delete ready.end[index];
   };
   
-  if(layero.data('isOutAnim')){
+  if(layero.data('anim')){
     layero.addClass(closeAnim);
   }
   
@@ -907,14 +900,9 @@ layer.close = function(index){
     ready.minIndex--;
     ready.minLeft.push(layero.attr('minLeft'));
   }
-  
-  if((layer.ie && layer.ie < 10) || !layero.data('isOutAnim')){
-    remove()
-  } else {
-    setTimeout(function(){
-      remove();
-    }, 200);
-  }
+  setTimeout(function(){
+    remove();
+  }, ((layer.ie && layer.ie < 10) || !layero.data('anim')) ? 0 : 200);
 };
 
 //关闭所有层
@@ -953,9 +941,6 @@ layer.prompt = function(options, yes){
     return '<input type="'+ (options.formType == 1 ? 'password' : 'text') +'" class="layui-layer-input" value="'+ (options.value||'') +'">';
   }();
   
-  var success = options.success;
-  delete options.success;
-  
   return layer.open($.extend({
     type: 1
     ,btn: ['&#x786E;&#x5B9A;','&#x53D6;&#x6D88;']
@@ -965,7 +950,6 @@ layer.prompt = function(options, yes){
     ,success: function(layero){
       prompt = layero.find('.layui-layer-input');
       prompt.focus();
-      typeof success === 'function' && success(layero);
     }
     ,resize: false
     ,yes: function(index){
@@ -984,12 +968,7 @@ layer.prompt = function(options, yes){
 //tab层
 layer.tab = function(options){
   options = options || {};
-  
-  var tab = options.tab || {}
-  ,success = options.success;
-  
-  delete options.success;
-  
+  var tab = options.tab || {};
   return layer.open($.extend({
     type: 1,
     skin: 'layui-layer-tab' + skin('tab'),
@@ -1024,7 +1003,6 @@ layer.tab = function(options){
         main.eq(index).show().siblings().hide();
         typeof options.change === 'function' && options.change(index);
       });
-      typeof success === 'function' && success(layero);
     }
   }, options));
 };
@@ -1040,9 +1018,6 @@ layer.photos = function(options, loop, key){
   dict.imgIndex = (start|0) + 1;
   
   options.img = options.img || 'img';
-  
-  var success = options.success;
-  delete options.success;
 
   if(!type){ //页面直接获取
     var parent = $(options.photos), pushData = function(){
@@ -1122,10 +1097,7 @@ layer.photos = function(options, loop, key){
     if(data.length <= 1) return;
     photos.start = dict.imgIndex - 1;
     layer.close(dict.index);
-    return layer.photos(options, true, key);
-    setTimeout(function(){
-      layer.photos(options, true, key);
-    }, 200);
+    layer.photos(options, true, key);
   }
   
   //一些动作
@@ -1170,12 +1142,10 @@ layer.photos = function(options, loop, key){
     shade: 'shade' in options ? false : 0.9,
     scrollbar: false
   });
-
   loadImage(data[start].src, function(img){
     layer.close(dict.loadi);
     dict.index = layer.open($.extend({
       type: 1,
-      id: 'layui-layer-photos',
       area: function(){
         var imgarea = [img.width, img.height];
         var winarea = [$(window).width() - 100, $(window).height() - 100];
@@ -1202,8 +1172,7 @@ layer.photos = function(options, loop, key){
       moveType: 1,
       scrollbar: false,
       moveOut: true,
-      //anim: Math.random()*5|0,
-      isOutAnim: false,
+      anim: Math.random()*5|0,
       skin: 'layui-layer-photos' + skin('photos'),
       content: '<div class="layui-layer-phimg">'
         +'<img src="'+ data[start].src +'" alt="'+ (data[start].alt||'') +'" layer-pid="'+ data[start].pid +'">'
@@ -1217,7 +1186,6 @@ layer.photos = function(options, loop, key){
         dict.imgsee = layero.find('.layui-layer-imguide,.layui-layer-imgbar');
         dict.event(layero);
         options.tab && options.tab(data[start], layero);
-        typeof success === 'function' && success(layero);
       }, end: function(){
         dict.end = true;
         $(document).off('keyup', dict.keyup);
@@ -1258,7 +1226,7 @@ window.layui && layui.define ? (
     exports('layer', layer);
   })
 ) : (
-  (typeof define === 'function' && define.amd) ? define(['jquery'], function(){ //requirejs加载
+  typeof define === 'function' ? define(['jquery'], function(){ //requirejs加载
     ready.run(window.jQuery);
     return layer;
   }) : function(){ //普通script标签加载

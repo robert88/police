@@ -1,11 +1,6 @@
 @import url(/web/redForm.css);
 @import url(/web/redTable.css);
-.layui-tab-title li.layui-this{
-    background: #fff;
-}
-.layui-tab-title li {
-    background: #f3f3f3;
-}
-.layui-table, .layui-table table {
-    margin: 10px 0
+.searchList .layui-form-label{
+    width:90px;
+    padding: 9px 10px;
 }

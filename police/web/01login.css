@@ -13,12 +13,11 @@ body{
 	position: relative;
     height: 100%;
     width: 100%;
-	min-width:400px;
 }
 .ls-container{
 	position: absolute;
 	width: 100%;
-	min-height: 540px;
+	min-height: 500px;
 	height: 100%;
 	padding:0;
 	background: url(/public/images/login/bg.jpg) no-repeat center center;
@@ -30,7 +29,7 @@ body{
 	left:50%;
 	font-size:16px;
 	width: 382px;
-	margin-left: -191px;
+	margin-left: -200px;
 	text-align: center;
 }
 .ls-container form{

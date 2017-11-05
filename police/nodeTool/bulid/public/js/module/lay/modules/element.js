@@ -173,26 +173,6 @@ layui.define('jquery', function(exports){
         child.removeClass(NAV_ANIM);
         parent[child.css('display') === 'none' ? 'addClass': 'removeClass'](NAV_ITEM+'ed');
       }
-    },
-    collapse: function() {
-      var $this = $(this)
-          , $icon = $this.find(".icon-up-dir,.icon-down-dir")
-          , $collaContent = $this.siblings(".layui-colla-content")
-          , $collapse = $this.parents(".layui-collapse").eq(0)
-          , filter = $collapse.attr("lay-filter")
-          , isNone = "none" === $collaContent.css("display");
-      if ("string" == typeof $collapse.attr("lay-accordion")) {
-        var $child = $collapse.children(".layui-colla-item").children("." + SHOW);
-        $child.siblings(".layui-colla-title").children(".layui-colla-icon").html("&#xe602;"),
-            r.removeClass(SHOW)
-      }
-      $collaContent[isNone ? "addClass" : "removeClass"](SHOW),
-          $icon.toggleClass("icon-up-dir").toggleClass("icon-down-dir"),
-          layui.event.call(this, MOD_NAME, "collapse(" + filter + ")", {
-            title: $this,
-            content: $collaContent,
-            show: isNone
-          })
     }
   };
   
@@ -310,21 +290,6 @@ layui.define('jquery', function(exports){
           });
           othis.css('visibility', 'visible');
         });
-      },
-      collapse: function () {
-        var klass = "layui-collapse";
-        $("." + klass).each(function () {
-          var $colla = $(this).find(".layui-colla-item");
-          $colla.each(function () {
-            var $this = $(this)
-                , $collaTitle = $this.find(".layui-colla-title")
-                , $collaContent = $this.find(".layui-colla-content")
-                , isNone = "none" === $collaContent.css("display");
-                $collaTitle.find(".collapse-icon").remove();
-                $collaTitle.append('<i class="collapse-icon '+ ( isNone? 'icon-up-dir' : 'icon-down-dir') +'"></i>');
-                $collaTitle.off("click", call.collapse).on("click", call.collapse);
-          })
-        })
       }
     };
 

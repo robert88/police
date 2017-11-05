@@ -1,194 +1,162 @@
 <div class='ls-container'>
 
 
-    <form class="layui-form layui-form-pane1 tab-item-min-height" action="">
-        <div class="layui-form-item searchList">
-            <div class="search-middle-gray ptb20">
-                <div class="layui-form-search-center-comb ">
-                    <div class="layui-inline">
-                        <label class="layui-form-label">案(事)件编号：</label>
-                        <div class="layui-input-inline">
-                            <input type="text" name="title" lay-verify="title" required="" placeholder=""
-                                   autocomplete="off" class="layui-input">
-                        </div>
-                    </div>
+    <form class="layui-form layui-form-pane1" action="">
+        <div class="layui-form-item title">
+            案件编号查询
+        </div>
 
-                    <div class="layui-inline">
-                        <label class="layui-form-label">案(事)件类别：</label>
-                        <div class="layui-input-inline">
-                            <input type="text" name="title" lay-verify="title" required="" placeholder=""
-                                   autocomplete="off" class="layui-input">
-                        </div>
-                    </div>
-
-                    <div class="layui-inline">
-                        <label class="layui-form-label">立(受)案编号：</label>
-                        <div class="layui-input-inline">
-                            <input type="text" name="title" lay-verify="title" required="" placeholder=""
-                                   autocomplete="off" class="layui-input">
-                        </div>
-                    </div>
-
-                    <div class="layui-inline">
-                        <label class="layui-form-label">受理人：</label>
-                        <div class="layui-input-inline">
-                            <input type="text" name="title" lay-verify="title" required="" placeholder=""
-                                   autocomplete="off" class="layui-input">
-                        </div>
-                    </div>
-
-                    <div class="layui-inline layui-date-range">
-                        <label class="layui-form-label">受理时间：</label>
-                        <div class="layui-input-inline" style="width: 161px;">
-                            <input required="" type="text"  placeholder="选择日期" class="layui-input layui-date-start">
-                            <i class="color-icon-date"></i>
-                        </div>
-                        <span class="layui-form-mid" style="width: 118px;text-align: center">至</span>
-                        <div class="layui-input-inline" style="  width: 161px;">
-                            <input required="" type="text"  placeholder="选择日期"  class="layui-input layui-date-end">
-                            <i class="color-icon-date"></i>
-                        </div>
-                    </div>
-                    <div class="layui-inline layui-date-range">
-                        <label class="layui-form-label">发案时间：</label>
-                        <div class="layui-input-inline" style="width: 161px;">
-                            <input required="" type="text"  placeholder="选择日期" class="layui-input layui-date-start">
-                            <i class="color-icon-date"></i>
-                        </div>
-                        <span class="layui-form-mid" style="width: 118px;text-align: center">至</span>
-                        <div class="layui-input-inline" style="  width: 161px;">
-                            <input required="" type="text"  placeholder="选择日期"  class="layui-input layui-date-end">
-                            <i class="color-icon-date"></i>
-                        </div>
-                    </div>
-                    <div class="layui-inline layui-date-range">
-                        <label class="layui-form-label">立案时间：</label>
-                        <div class="layui-input-inline" style="width: 161px;">
-                            <input required="" type="text"  placeholder="选择日期" class="layui-input layui-date-start">
-                            <i class="color-icon-date"></i>
-                        </div>
-                        <span class="layui-form-mid" style="width: 118px;text-align: center">至</span>
-                        <div class="layui-input-inline" style="  width: 161px;">
-                            <input required="" type="text"  placeholder="选择日期"  class="layui-input layui-date-end">
-                            <i class="color-icon-date"></i>
-                        </div>
-                    </div>
-                    <div class="layui-inline layui-date-range">
-                        <label class="layui-form-label">破案时间：</label>
-                        <div class="layui-input-inline" style="width: 161px;">
-                            <input required="" type="text"  placeholder="选择日期" class="layui-input layui-date-start">
-                            <i class="color-icon-date"></i>
-                        </div>
-                        <span class="layui-form-mid" style="width: 118px;text-align: center">至</span>
-                        <div class="layui-input-inline" style="  width: 161px;">
-                            <input required="" type="text"  placeholder="选择日期"  class="layui-input layui-date-end">
-                            <i class="color-icon-date"></i>
-                        </div>
-                    </div>
-                    <div class="layui-inline">
-                        <label class="layui-form-label">行政区划：</label>
-                        <div class="layui-input-inline">
-                            <select name="quiz">
-                                <option value="">全部</option>
-                                <option value="你工作的第一个城市">你工作的第一个城市</option>
-                                <option value="你的工号" disabled="">你的工号</option>
-                                <option value="你最喜欢的老师">你最喜欢的老师</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="layui-inline">
-                        <label class="layui-form-label">所属辖区：</label>
-                        <div class="layui-input-inline">
-                            <select name="quiz">
-                                <option value="">全部</option>
-                                <option value="你工作的第一个城市">你工作的第一个城市</option>
-                                <option value="你的工号" disabled="">你的工号</option>
-                                <option value="你最喜欢的老师">你最喜欢的老师</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="layui-inline">
-                        <label class="layui-form-label">受理单位：</label>
-                        <div class="layui-input-inline">
-                            <select name="quiz">
-                                <option value="">全部</option>
-                                <option value="你工作的第一个城市">你工作的第一个城市</option>
-                                <option value="你的工号" disabled="">你的工号</option>
-                                <option value="你最喜欢的老师">你最喜欢的老师</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="layui-inline">
-                        <label class="layui-form-label">案件分类：</label>
-                        <div class="layui-input-inline">
-                            <select name="quiz">
-                                <option value="">全部</option>
-                                <option value="你工作的第一个城市">你工作的第一个城市</option>
-                                <option value="你的工号" disabled="">你的工号</option>
-                                <option value="你最喜欢的老师">你最喜欢的老师</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="layui-inline">
-                        <label class="layui-form-label">简要案情关键字：</label>
-                        <div class="layui-input-inline">
-                            <input type="text" name="title" lay-verify="title" required="" placeholder=""
-                                   autocomplete="off" class="layui-input">
-                        </div>
-                    </div>
-                    <div class="layui-inline">
-                        <label class="layui-form-label">是否监督异常：</label>
-                        <div class="layui-input-inline">
-                            <select name="quiz">
-                                <option value="">全部</option>
-                                <option value="你工作的第一个城市">你工作的第一个城市</option>
-                                <option value="你的工号" disabled="">你的工号</option>
-                                <option value="你最喜欢的老师">你最喜欢的老师</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="layui-inline">
-                        <label class="layui-form-label">是否超期预警：</label>
-                        <div class="layui-input-inline">
-                            <select name="quiz">
-                                <option value="">全部</option>
-                                <option value="你工作的第一个城市">你工作的第一个城市</option>
-                                <option value="你的工号" disabled="">你的工号</option>
-                                <option value="你最喜欢的老师">你最喜欢的老师</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="layui-inline layui-form-text">
-                        <label class="layui-form-label">立案情况：</label>
-                        <div class="layui-input-inline">
-                            <input type="radio" name="sex" value="不限" title="不限" checked=""><div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon layui-anim-scaleSpring"></i><span>不限</span></div>
-                            <input type="radio" name="sex" value="已立" title="已立" checked=""><div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon layui-anim-scaleSpring"></i><span>已立</span></div>
-                            <input type="radio" name="sex" value="不予立案" title="不予立案"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><span>不予立案</span></div>
-                            <input type="radio" name="sex" value="立案退回" title="立案退回"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><span>立案退回</span></div>
-                            <input type="radio" name="sex" value="未处理" title="未处理"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><span>未处理</span></div>
-                            <!--<input type="radio" name="sex" value="禁" title="禁用" disabled=""><div class="layui-unselect layui-form-radio layui-radio-disbaled layui-disabled"><i class="layui-anim layui-icon"></i><span>禁用</span></div>-->
-                        </div>
-                    </div>
-                    <div class="layui-inline layui-form-text">
-                        <label class="layui-form-label">破销案情况：</label>
-                        <div class="layui-input-inline">
-                            <input type="radio" name="sex" value="不限" title="不限" checked=""><div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon layui-anim-scaleSpring"></i><span>不限</span></div>
-                            <input type="radio" name="sex" value="破(结)案" title="破(结)案" checked=""><div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon layui-anim-scaleSpring"></i><span>破(结)案</span></div>
-                            <input type="radio" name="sex" value="销案" title="销案"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><span>销案</span></div>
-                            <input type="radio" name="sex" value="已移交" title="已移交"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><span>已移交</span></div>
-                            <input type="radio" name="sex" value="未破(结)案" title="未破(结)案"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><span>未破(结)案</span></div>
-                            <!--<input type="radio" name="sex" value="禁" title="禁用" disabled=""><div class="layui-unselect layui-form-radio layui-radio-disbaled layui-disabled"><i class="layui-anim layui-icon"></i><span>禁用</span></div>-->
-                        </div>
-                    </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">受立案编号</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off"
+                           class="layui-input">
                 </div>
             </div>
-            <div class="layui-form-search-footer tc mt10 mb30">
-                <div class="layui-inline">
-                    <a class="layui-btn layui-btn-opa mr30" href="#/web/10.2.caseSearchResult.html">查询</a>
+
+            <div class="layui-inline">
+                <a class="layui-btn layui-btn-opa mr10">一键查询</a>
+                <a class="layui-btn layui-btn-opa mr10">本平台查询</a>
+                <a class="layui-btn layui-btn-opa mr10">110接警中心查询</a>
+                <a class="layui-btn layui-btn-opa mr10">警综平台查询</a>
+            </div>
+        </div>
+
+        <div class="layui-form-item title">
+            模糊查询
+        </div>
+        <div class="layui-form-item ">
+            <div class="layui-inline">
+                <label class="layui-form-label">关键字</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="title" lay-verify="title" required="" placeholder="" autocomplete="off"
+                           class="layui-input">
                 </div>
             </div>
         </div>
+
+        <div class="layui-form-item">
+
+            <div class="layui-inline">
+                <label class="layui-form-label">案件类型</label>
+                <div class="layui-input-inline">
+                    <select name="quiz">
+                        <option value="">请选择</option>
+                        <option value="你工作的第一个城市">你工作的第一个城市</option>
+                        <option value="你的工号" disabled="">你的工号</option>
+                        <option value="你最喜欢的老师">你最喜欢的老师</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="layui-inline">
+                <label class="layui-form-label">接警时间范围</label>
+                <div class="layui-input-inline" style="  width: 130px;">
+                    <input required="" type="text" id="layui-laydate-input1" placeholder="选择日期"
+                           onclick="layui.laydate({elem: this})" class="layui-input">
+                    <i class="color-icon-date"></i>
+                </div>
+                <span class="layui-form-mid">~</span>
+                <div class="layui-input-inline" style="  width: 130px;">
+                    <input required="" type="text" id="layui-laydate-input2" placeholder="选择日期"
+                           onclick="layui.laydate({elem: this})" class="layui-input">
+                    <i class="color-icon-date"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+
+            <div class="layui-inline">
+                <label class="layui-form-label">受立状态</label>
+                <div class="layui-input-inline">
+                    <select name="quiz">
+                        <option value="">请选择</option>
+                        <option value="你工作的第一个城市">你工作的第一个城市</option>
+                        <option value="你的工号" disabled="">你的工号</option>
+                        <option value="你最喜欢的老师">你最喜欢的老师</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="layui-inline">
+                <label class="layui-form-label">受立案时间范围</label>
+                <div class="layui-input-inline" style="  width: 130px;">
+                    <input required="" type="text" id="layui-laydate-input3" placeholder="选择日期"
+                           onclick="layui.laydate({elem: this})" class="layui-input">
+                    <i class="color-icon-date"></i>
+                </div>
+                <span class="layui-form-mid">~</span>
+                <div class="layui-input-inline" style="  width: 130px;">
+                    <input required="" type="text" id="layui-laydate-input4" placeholder="选择日期"
+                           onclick="layui.laydate({elem: this})" class="layui-input">
+                    <i class="color-icon-date"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+
+            <div class="layui-inline">
+                <label class="layui-form-label">地市单位</label>
+                <div class="layui-input-inline">
+                    <select name="quiz">
+                        <option value="">请选择</option>
+                        <option value="你工作的第一个城市">你工作的第一个城市</option>
+                        <option value="你的工号" disabled="">你的工号</option>
+                        <option value="你最喜欢的老师">你最喜欢的老师</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="layui-inline">
+                <label class="layui-form-label">分局辖区</label>
+                <div class="layui-input-inline">
+                    <select name="quiz">
+                        <option value="">请选择</option>
+                        <option value="你工作的第一个城市">你工作的第一个城市</option>
+                        <option value="你的工号" disabled="">你的工号</option>
+                        <option value="你最喜欢的老师">你最喜欢的老师</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+        <div class="layui-form-item">
+
+            <div class="layui-inline">
+                <label class="layui-form-label">材料文件</label>
+                <div class="layui-input-inline">
+                    <select name="quiz">
+                        <option value="">请选择</option>
+                        <option value="你工作的第一个城市">你工作的第一个城市</option>
+                        <option value="你的工号" disabled="">你的工号</option>
+                        <option value="你最喜欢的老师">你最喜欢的老师</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="layui-inline">
+                <label class="layui-form-label">接警方式</label>
+                <div class="layui-input-inline">
+                    <select name="quiz">
+                        <option value="">请选择</option>
+                        <option value="你工作的第一个城市">你工作的第一个城市</option>
+                        <option value="你的工号" disabled="">你的工号</option>
+                        <option value="你最喜欢的老师">你最喜欢的老师</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <div class="layui-input-block subBtn-wrap2">
+                    <button class="layui-btn layui-btn-opa subBtn" lay-submit="" lay-filter="*">提交</button>
+                </div>
+            </div>
+
+        </div>
+
     </form>
 
 </div>

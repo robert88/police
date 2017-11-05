@@ -121,7 +121,7 @@ a cite{font-style: normal; *cursor:pointer;}
 /* 原始 */.layui-btn-primary{border: 1px solid #C9C9C9; background-color: #fff; color: #555;}
 .layui-btn-primary:hover{border-color: #009688; color: #333}
 /* 百搭 */.layui-btn-normal{background-color: #1E9FFF;}
-/* 暖色 */.layui-btn-warn{background-color: #fe9900;}
+/* 暖色 */.layui-btn-warm{background-color: #fe9900;}
 /* 警告 */.layui-btn-danger{background-color: #db512c;}
 /* 禁用 */.layui-btn-disabled,.layui-btn-disabled:hover,.layui-btn-disabled:active{border: 1px solid #e6e6e6; background-color: #FBFBFB; color: #C9C9C9; cursor: not-allowed; opacity: 1;}
 
